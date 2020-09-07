@@ -1,3 +1,9 @@
-@import "./helper/bootstrap-reboot.scss";
-
-@import "./pages/index.scss"
+@import "./config/variables.scss";
+//
+@import "./helper/normalize.scss";
+@import "./helper/formalize.scss";
+@import "./helper/global.scss";
+//
+@import "./global/header.scss";
+//
+@import "./pages/index.scss";

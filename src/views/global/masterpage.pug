@@ -4,8 +4,16 @@ html(lang='en')
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
         title IHU Ekonomi ve Finans Kulübü
+        link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap', rel='stylesheet')
+
     body
-    block content
+        include header
+        
+        main.Main
+            block content
+        
 
 
+
+    script(src='../../scripts/jquery-3.5.1.min.js')
     script(src="../../scripts/main.js")
