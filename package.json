@@ -1,0 +1,19 @@
+{
+  "name": "ihu-ekonfinkulubu-web-sitesi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Kerem Sirin",
+  "scripts": {
+    "dev": "parcel src/views/pages/index.pug",
+    "build": "parcel build src/index.pug"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^4.14.1"
+  }
+}
