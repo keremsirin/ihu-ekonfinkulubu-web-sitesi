@@ -4,9 +4,15 @@ html(lang='en')
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
         title IHU Ekonomi ve Finans Kulübü
+        link(rel="stylesheet", href="../../styles/main.scss")
         link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap', rel='stylesheet')
 
     body
+        svg(aria-hidden='true', style='position: absolute; width: 0; height: 0; overflow: hidden;', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+            defs
+                symbol#icon-menu(viewBox='0 0 32 32')
+                    path(d='M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z')
+
         include header
         
         main.Main
@@ -14,6 +20,5 @@ html(lang='en')
         
 
 
-
-    script(src='../../scripts/jquery-3.5.1.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
     script(src="../../scripts/main.js")

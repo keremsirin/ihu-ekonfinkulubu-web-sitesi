@@ -1,22 +1,122 @@
 .Header {
+  //background-color: $color-red;
+  //background-color: white;
   border-bottom: 1px solid #ddd;
+  height: 70px;
+
   .container {
+    position: relative;
     display: flex;
-    a {
-      width: 250px;
+    align-items: center;
+    height: 100%;
+  }
+
+  &-logo {
+    img {
+      //background-color: red;
+      margin-top: -4px;
+      width: 180px;
+      //width: 100%;
+    }
+  }
+
+  &-switch {
+    left: 10px;
+    position: relative;
+    margin-left: auto;
+    background-color: transparent;
+    width: $finger-size;
+    padding: 5px;
+
+    @include mq("tablet") {
+      display: none;
     }
   }
 
   &-menu {
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: .3s;
+    opacity: 0;
     display: flex;
-    margin-left: auto;
-    align-items: center;
-  }
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    box-shadow: 0 20px 30px rgba($color: #000000, $alpha: 0.2);
 
-  &-logo {
+    .Header.menu-show & {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
+    }
+
+    @include mq("tablet") {
+      pointer-events: auto;
+      transform: translateX(0);
+      transition: 0s;
+      opacity: 1;
+      margin-left: auto;
+      align-items: center;
+      flex-direction: row;
+      position: static;
+      box-shadow: none;
+      background-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &-pages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       
-    img {
-      width: 100%;
+
+      @include mq("tablet") {
+        flex-direction: row;
+      }
+
+      a {
+        width: 100% !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        height: $finger-size;
+        width: 120px;
+        //color: white;
+        color: $color-blue;
+        font-weight: bold;
+
+        &:hover {
+          background-color: $color-light-blue;
+          border-radius: $border-radius;
+        }
+      }
+    }
+
+    &-lang {
+      margin-top: 10px;
+      display: flex;
+      padding-right: 10px;
+      padding-left: 10px;
+      justify-content: center;
+      padding-bottom: 10px;
+
+      &-tr {
+        margin-right: 10px;
+      }
+
+      &-tr,
+      &-uk {
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+      }
     }
   }
 }

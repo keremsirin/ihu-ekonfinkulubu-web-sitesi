@@ -2,12 +2,21 @@ header.Header
     .container
         a.Header-logo(href='')
             img(src='../../../src/img/svglogo.svg')
+            //- img(src='../../../src/img/svglogobeyaz.svg')
+        
+        button.Header-switch(type='button')
+            svg.icon.icon-menu
+                use(xlink:href='#icon-menu')
+
         .Header-menu
             .Header-menu-pages
                 a(href='') Hakkımızda
                 a(href='') Blog
                 a(href='') Etkinlikler
                 a(href='') İletişim
-            .Header-menu-lang
-                select
-                    option(value='en') EN
+            .Header-menu-lang                
+                a.Header-menu-lang-tr(href="")
+                    img(src="../../../src/img/turkey.svg")
+                a.Header-menu-lang-uk(href="")
+                    img(src="../../../src/img/us.svg")
+
