@@ -3,6 +3,8 @@
   //background-color: white;
   border-bottom: 1px solid #ddd;
   height: 70px;
+  position: fixed;
+  width: 100%;
 
   .container {
     position: relative;
@@ -70,6 +72,7 @@
     top: 100%;
     padding-left: $gutter;
     padding-right: $gutter;
+    background-color: $color-light-blue;
     box-shadow: 0 20px 30px rgba($color: #000000, $alpha: 0.2);
 
     .Header.menu-show & {
@@ -110,16 +113,21 @@
         padding-left: $gutter;
         padding-right: $gutter;
         height: $finger-size;
-        //color: white;
-        color: $color-blue;
+        color: white;
+        //color: $color-blue;
         font-weight: bold;
 
         @include mq("tablet") {
+          color: $color-blue;
           width: 120px;
         }
         &:hover {
-          background-color: $color-light-blue;
+          background-color: $color-blue;
+          //background-color: $color-light-blue;
           border-radius: $border-radius;
+          @include mq("tablet") {
+          background-color: $color-light-blue;            
+          }
         }
       }
     }
