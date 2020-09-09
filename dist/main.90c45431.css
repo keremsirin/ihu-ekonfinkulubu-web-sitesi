@@ -383,9 +383,24 @@ a {
     display: flex;
     align-items: center;
     height: 100%; }
-  .Header-logo img {
-    margin-top: -4px;
-    width: 180px; }
+  .Header-logo {
+    display: flex;
+    align-items: center; }
+    .Header-logo-logo {
+      width: 44px; }
+      @media (min-width: 768px) {
+        .Header-logo-logo {
+          width: 50px; } }
+      .Header-logo-logo img {
+        width: 80%; }
+    .Header-logo-metin {
+      width: 150px;
+      margin-left: -10px; }
+      @media (min-width: 768px) {
+        .Header-logo-metin {
+          width: 180px; } }
+      .Header-logo-metin img {
+        width: 100%; }
   .Header-switch {
     left: 10px;
     position: relative;
@@ -436,16 +451,18 @@ a {
         .Header-menu-pages {
           flex-direction: row; } }
       .Header-menu-pages a {
-        width: 100% !important;
+        width: 100%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         padding-left: 20px;
         padding-right: 20px;
         height: 44px;
-        width: 120px;
         color: #2f5369;
         font-weight: bold; }
+        @media (min-width: 768px) {
+          .Header-menu-pages a {
+            width: 120px; } }
         .Header-menu-pages a:hover {
           background-color: #6bb8ca;
           border-radius: 5px; }

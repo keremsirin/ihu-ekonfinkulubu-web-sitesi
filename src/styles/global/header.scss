@@ -12,12 +12,36 @@
   }
 
   &-logo {
-    img {
-      //background-color: red;
-      margin-top: -4px;
-      width: 180px;
-      //width: 100%;
+    display: flex;
+    align-items: center;
+    &-logo {
+      width: $finger-size;
+      @include mq("tablet") {
+        width: 50px;
+      }
+      img {
+        width: 80%;
+      }
     }
+    &-metin {
+      width: 150px;
+      @include mq("tablet") {
+        width: 180px;
+      }
+      margin-left: -10px;
+      img {
+        width: 100%;
+      }
+      
+    }
+
+
+    // img {
+    //   //background-color: red;
+    //   margin-top: -4px;
+    //   //width: 180px;
+    //   width: 10%;
+    // }
   }
 
   &-switch {
@@ -80,18 +104,20 @@
       }
 
       a {
-        width: 100% !important;
+        width: 100%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         padding-left: $gutter;
         padding-right: $gutter;
         height: $finger-size;
-        width: 120px;
         //color: white;
         color: $color-blue;
         font-weight: bold;
-
+        
+        @include mq("tablet") {
+          width:120px;
+        }
         &:hover {
           background-color: $color-light-blue;
           border-radius: $border-radius;
