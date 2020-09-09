@@ -379,7 +379,8 @@ a {
   border-bottom: 1px solid #ddd;
   height: 70px;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  background-color: white; }
   .Header .container {
     position: relative;
     display: flex;
@@ -503,6 +504,43 @@ a {
             width: 24px;
             height: 24px;
             background-color: transparent; } }
+
+.Footer {
+  margin-top: 480px;
+  width: 100%; }
+  .Footer-color {
+    width: 100%;
+    background-color: red; }
+  .Footer-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #6bb8ca;
+    width: 100%; }
+    .Footer-top-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: black; }
+      .Footer-top-logo img {
+        width: 100px; }
+    .Footer-top-contact {
+      margin-right: 100px;
+      display: flex;
+      background-color: white;
+      flex-direction: column; }
+    .Footer-top-shortlinks {
+      display: flex;
+      background-color: white;
+      flex-direction: column; }
+  .Footer-middle {
+    height: 170px;
+    background-color: #2f5369; }
+  .Footer-bottom {
+    height: 50px;
+    background-color: #2f5369; }
 
 
 /*# sourceMappingURL=/main.90c45431.css.map */
