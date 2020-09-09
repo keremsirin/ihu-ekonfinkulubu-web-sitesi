@@ -401,10 +401,16 @@ a {
           width: 180px; } }
       .Header-logo-metin img {
         width: 100%; }
+  .Header-lang-mobile {
+    display: flex;
+    margin-left: auto; }
+    @media (min-width: 768px) {
+      .Header-lang-mobile {
+        display: none; } }
   .Header-switch {
     left: 10px;
     position: relative;
-    margin-left: auto;
+    margin-top: .3%;
     background-color: transparent;
     width: 44px;
     padding: 5px; }
@@ -414,7 +420,7 @@ a {
   .Header-menu {
     pointer-events: none;
     transform: translateX(100%);
-    transition: .3s;
+    transition: 0.3s;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -467,18 +473,29 @@ a {
           background-color: #6bb8ca;
           border-radius: 5px; }
     .Header-menu-lang {
-      margin-top: 10px;
-      display: flex;
-      padding-right: 10px;
-      padding-left: 10px;
-      justify-content: center;
-      padding-bottom: 10px; }
+      display: none; }
+      @media (min-width: 768px) {
+        .Header-menu-lang {
+          margin-top: 10px;
+          display: flex;
+          padding-right: 10px;
+          padding-left: 10px;
+          justify-content: center;
+          padding-bottom: 10px; } }
       .Header-menu-lang-tr {
-        margin-right: 10px; }
+        margin-right: 15px; }
+        @media (min-width: 768px) {
+          .Header-menu-lang-tr {
+            margin-right: 10px; } }
       .Header-menu-lang-tr, .Header-menu-lang-uk {
         width: 24px;
         height: 24px;
         background-color: transparent; }
+        @media (min-width: 768px) {
+          .Header-menu-lang-tr, .Header-menu-lang-uk {
+            width: 24px;
+            height: 24px;
+            background-color: transparent; } }
 
 
 /*# sourceMappingURL=/main.90c45431.css.map */

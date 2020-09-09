@@ -32,22 +32,22 @@
       img {
         width: 100%;
       }
-      
     }
+  }
 
-
-    // img {
-    //   //background-color: red;
-    //   margin-top: -4px;
-    //   //width: 180px;
-    //   width: 10%;
-    // }
+  &-lang-mobile {
+    display: flex;
+    margin-left: auto;
+    @include mq("tablet") {
+      display: none;
+    }
   }
 
   &-switch {
     left: 10px;
     position: relative;
-    margin-left: auto;
+    margin-top: .3%;
+    //margin-left: auto;
     background-color: transparent;
     width: $finger-size;
     padding: 5px;
@@ -60,7 +60,7 @@
   &-menu {
     pointer-events: none;
     transform: translateX(100%);
-    transition: .3s;
+    transition: 0.3s;
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      
 
       @include mq("tablet") {
         flex-direction: row;
@@ -114,9 +113,9 @@
         //color: white;
         color: $color-blue;
         font-weight: bold;
-        
+
         @include mq("tablet") {
-          width:120px;
+          width: 120px;
         }
         &:hover {
           background-color: $color-light-blue;
@@ -126,15 +125,22 @@
     }
 
     &-lang {
-      margin-top: 10px;
-      display: flex;
-      padding-right: 10px;
-      padding-left: 10px;
-      justify-content: center;
-      padding-bottom: 10px;
+      display: none;
+
+      @include mq("tablet") {
+        margin-top: 10px;
+        display: flex;
+        padding-right: 10px;
+        padding-left: 10px;
+        justify-content: center;
+        padding-bottom: 10px;
+      }
 
       &-tr {
-        margin-right: 10px;
+        margin-right: 15px;
+        @include mq("tablet") {
+          margin-right: 10px;
+        }
       }
 
       &-tr,
@@ -142,6 +148,11 @@
         width: 24px;
         height: 24px;
         background-color: transparent;
+        @include mq("tablet") {
+          width: 24px;
+          height: 24px;
+          background-color: transparent;
+        }
       }
     }
   }
