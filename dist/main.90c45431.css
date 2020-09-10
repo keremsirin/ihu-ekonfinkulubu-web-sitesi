@@ -479,7 +479,7 @@ h2, h3 {
         @media (min-width: 768px) {
           .Header-menu-pages a {
             color: #2f5369;
-            width: 120px; } }
+            width: 110px; } }
         .Header-menu-pages a:hover {
           background-color: #2f5369;
           border-radius: 5px; }
@@ -555,7 +555,8 @@ h2, h3 {
         width: 120px; }
       .Footer-top-logo p {
         font-size: 0.8em;
-        font-style: italic; }
+        font-style: italic;
+        line-height: 16px; }
     .Footer-top-contact {
       margin-top: 20px;
       display: flex;
@@ -608,7 +609,8 @@ h2, h3 {
     background-color: #6bb8ca;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
 
 
 /*# sourceMappingURL=/main.90c45431.css.map */
