@@ -1,12 +1,148 @@
-.Main {
-    margin-top: 70px;
-}
-
-.baslik {
+.iletisim {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     height: 600px;
-    background-color: lightgray;
- }
+    justify-content: center;
+    //align-items: stretch;
+
+    &-infos {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        //background-color: #ddd;
+        
+
+        &-inclusive {
+            display: flex;
+            flex-direction: column;
+            height: 40%;
+            width: 100%;
+            margin: 40px 0;
+            background-color: red;
+
+            a {
+                padding-left: $gutter;
+            }
+
+            a:hover {
+                color: $color-light-blue;
+            }
+            p {
+                padding-left: $gutter;
+            }
+
+            &-address {
+                display: flex;
+                width: 100%;
+                height: 10%;
+                align-items: center;
+                margin-bottom: $gutter;
+                &-icon {
+                    display: flex;
+                    width: 40px;
+                    height: 40px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                i {
+                    font-size: 40px;
+                }
+            }
+
+            &-email {
+                display: flex;
+                width: 100%;
+                height: 10%;
+                align-items: center;
+                margin-bottom: $gutter;
+                &-icon {
+                    display: flex;
+                    width: 40px;
+                    height: 40px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                i {
+                    font-size: 32px;
+                }               
+            }
+
+            &-phone {
+                display: flex;
+                width: 100%;
+                height: 10%;
+                align-items: center;
+                margin-bottom: $gutter;
+                &-icon {
+                    display: flex;
+                    width: 40px;
+                    height: 40px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                i {
+                    font-size: 40px;
+                }               
+            }
+            
+            
+
+        }
+
+        &-maps {
+            display: flex;
+            width: 100%;
+            height: 40%;
+            background-color: yellow;
+        }
+    }
+
+    &-img {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        padding-left: $gutter;
+        //padding-right: $gutter;
+        justify-content: space-between;
+
+        &-gate {
+            display: flex;
+            width: 100%;
+            height: 40%;
+            margin-top: 40px;
+
+            img {
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-campus {
+            display: flex;
+            width: 100%;
+            height: 40%;
+            margin-bottom: 40px;
+
+            img {
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+    
+    // .gate {
+    //     display: flex;
+    //     width: 30%;
+    //     height: 30%;
+    // }
+    // .campus {
+    //     display: flex;
+    //     width: 30%;
+    //     height: 30%;
+    // }
+}
