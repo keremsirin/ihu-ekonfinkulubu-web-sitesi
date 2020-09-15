@@ -3,15 +3,26 @@
     width: 100%;
     height: 600px;
     justify-content: center;
-    //align-items: stretch;
+
+    @include mq("tablet") {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        justify-content: center;
+    }
 
     &-infos {
         display: flex;
-        width: 50%;
+        width: 90%;
         height: 100%;
         flex-direction: column;
-        //background-color: #ddd;
         
+        @include mq("tablet") {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+        }
 
         &-inclusive {
             display: flex;
@@ -20,35 +31,70 @@
             width: 100%;
             margin: 40px 0;
             justify-content: space-around;
+
+            @include mq("tablet") {
+                display: flex;
+                flex-direction: column;
+                height: 40%;
+                width: 100%;
+                margin: 40px 0;
+                justify-content: space-around;
+            }
             
-            //background-color: red;
+            
 
             a {
+                font-size: $font-size-medium;
                 padding-left: $gutter;
+                @include mq("tablet") {
+                    font-size: $font-size;
+                    padding-left: $gutter;
+                }
             }
 
             a:hover {
                 color: $color-light-blue;
             }
-            p {
-                padding-left: $gutter;
-            }
+           
 
             &-address {
                 display: flex;
                 width: 100%;
                 height: 10%;
                 align-items: center;
-                // margin-bottom: 40px;
+                //justify-content: center;
+
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: 10%;
+                    align-items: center;
+                }
+                
                 &-icon {
                     display: flex;
                     width: 40px;
                     height: 40px;
                     justify-content: center;
                     align-items: center;
+                    // margin-left: 5px;
+                    // margin-right: 10px;
+
+                    @include mq("tablet") {
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
                 i {
-                    font-size: 40px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 34px;
+                    @include mq("tablet") {
+                        font-size: 40px;
+                    }
                 }
             }
 
@@ -57,16 +103,34 @@
                 width: 100%;
                 height: 10%;
                 align-items: center;
-                // margin-bottom: 40px;
+                
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: 10%;
+                    align-items: center;
+                }
+
                 &-icon {
                     display: flex;
                     width: 40px;
                     height: 40px;
                     justify-content: center;
                     align-items: center;
+
+                    @include mq("tablet") {
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
                 i {
-                    font-size: 32px;
+                    font-size: 26px;
+                    @include mq("tablet") {
+                        font-size: 32px;
+                    }
                 }               
             }
 
@@ -75,16 +139,34 @@
                 width: 100%;
                 height: 10%;
                 align-items: center;
-                // margin-bottom: 40px;
+                
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: 10%;
+                    align-items: center;
+                }
+
                 &-icon {
                     display: flex;
                     width: 40px;
                     height: 40px;
                     justify-content: center;
                     align-items: center;
+
+                    @include mq("tablet") {
+                        display: flex;
+                        width: 40px;
+                        height: 40px;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
                 i {
-                    font-size: 40px;
+                    font-size: 34px;
+                    @include mq("tablet") {
+                        font-size: 40px;
+                    }
                 }               
             }
             
@@ -96,17 +178,31 @@
             display: flex;
             width: 100%;
             height: 40%;
+
+            @include mq("tablet") {
+                display: flex;
+                width: 100%;
+                height: 40%;
+            }
         }
     }
 
     &-img {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 50%;
         height: 100%;
         padding-left: $gutter;
-        //padding-right: $gutter;
         justify-content: space-between;
+
+        @include mq("tablet") {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            padding-left: $gutter;
+            justify-content: space-between;
+        }
 
         &-gate {
             display: flex;
@@ -134,16 +230,4 @@
             }
         }
     }
-    
-    
-    // .gate {
-    //     display: flex;
-    //     width: 30%;
-    //     height: 30%;
-    // }
-    // .campus {
-    //     display: flex;
-    //     width: 30%;
-    //     height: 30%;
-    // }
 }

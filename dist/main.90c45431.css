@@ -383,14 +383,30 @@ h4 {
   margin-top: 70px; }
 
 .page_title {
+  display: none; }
+  @media (min-width: 768px) {
+    .page_title {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 140px;
+      color: #2f5369;
+      border-bottom: 1px solid #ddd; } }
+
+.page_title_mobile {
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 140px;
+  height: 100px;
   color: #2f5369;
   border-bottom: 1px solid #ddd; }
+  @media (min-width: 768px) {
+    .page_title_mobile {
+      display: none; } }
 
 .Header {
   border-bottom: 1px solid #ddd;
@@ -738,11 +754,23 @@ h4 {
   width: 100%;
   height: 600px;
   justify-content: center; }
+  @media (min-width: 768px) {
+    .iletisim {
+      display: flex;
+      width: 100%;
+      height: 600px;
+      justify-content: center; } }
   .iletisim-infos {
     display: flex;
-    width: 50%;
+    width: 90%;
     height: 100%;
     flex-direction: column; }
+    @media (min-width: 768px) {
+      .iletisim-infos {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column; } }
     .iletisim-infos-inclusive {
       display: flex;
       flex-direction: column;
@@ -750,62 +778,136 @@ h4 {
       width: 100%;
       margin: 40px 0;
       justify-content: space-around; }
+      @media (min-width: 768px) {
+        .iletisim-infos-inclusive {
+          display: flex;
+          flex-direction: column;
+          height: 40%;
+          width: 100%;
+          margin: 40px 0;
+          justify-content: space-around; } }
       .iletisim-infos-inclusive a {
+        font-size: 15px;
         padding-left: 20px; }
+        @media (min-width: 768px) {
+          .iletisim-infos-inclusive a {
+            font-size: 16px;
+            padding-left: 20px; } }
       .iletisim-infos-inclusive a:hover {
         color: #6bb8ca; }
-      .iletisim-infos-inclusive p {
-        padding-left: 20px; }
       .iletisim-infos-inclusive-address {
         display: flex;
         width: 100%;
         height: 10%;
         align-items: center; }
+        @media (min-width: 768px) {
+          .iletisim-infos-inclusive-address {
+            display: flex;
+            width: 100%;
+            height: 10%;
+            align-items: center; } }
         .iletisim-infos-inclusive-address-icon {
           display: flex;
           width: 40px;
           height: 40px;
           justify-content: center;
           align-items: center; }
+          @media (min-width: 768px) {
+            .iletisim-infos-inclusive-address-icon {
+              display: flex;
+              width: 40px;
+              height: 40px;
+              justify-content: center;
+              align-items: center; } }
         .iletisim-infos-inclusive-address i {
-          font-size: 40px; }
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 34px; }
+          @media (min-width: 768px) {
+            .iletisim-infos-inclusive-address i {
+              font-size: 40px; } }
       .iletisim-infos-inclusive-email {
         display: flex;
         width: 100%;
         height: 10%;
         align-items: center; }
+        @media (min-width: 768px) {
+          .iletisim-infos-inclusive-email {
+            display: flex;
+            width: 100%;
+            height: 10%;
+            align-items: center; } }
         .iletisim-infos-inclusive-email-icon {
           display: flex;
           width: 40px;
           height: 40px;
           justify-content: center;
           align-items: center; }
+          @media (min-width: 768px) {
+            .iletisim-infos-inclusive-email-icon {
+              display: flex;
+              width: 40px;
+              height: 40px;
+              justify-content: center;
+              align-items: center; } }
         .iletisim-infos-inclusive-email i {
-          font-size: 32px; }
+          font-size: 26px; }
+          @media (min-width: 768px) {
+            .iletisim-infos-inclusive-email i {
+              font-size: 32px; } }
       .iletisim-infos-inclusive-phone {
         display: flex;
         width: 100%;
         height: 10%;
         align-items: center; }
+        @media (min-width: 768px) {
+          .iletisim-infos-inclusive-phone {
+            display: flex;
+            width: 100%;
+            height: 10%;
+            align-items: center; } }
         .iletisim-infos-inclusive-phone-icon {
           display: flex;
           width: 40px;
           height: 40px;
           justify-content: center;
           align-items: center; }
+          @media (min-width: 768px) {
+            .iletisim-infos-inclusive-phone-icon {
+              display: flex;
+              width: 40px;
+              height: 40px;
+              justify-content: center;
+              align-items: center; } }
         .iletisim-infos-inclusive-phone i {
-          font-size: 40px; }
+          font-size: 34px; }
+          @media (min-width: 768px) {
+            .iletisim-infos-inclusive-phone i {
+              font-size: 40px; } }
     .iletisim-infos-maps {
       display: flex;
       width: 100%;
       height: 40%; }
+      @media (min-width: 768px) {
+        .iletisim-infos-maps {
+          display: flex;
+          width: 100%;
+          height: 40%; } }
   .iletisim-img {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 50%;
     height: 100%;
     padding-left: 20px;
     justify-content: space-between; }
+    @media (min-width: 768px) {
+      .iletisim-img {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        padding-left: 20px;
+        justify-content: space-between; } }
     .iletisim-img-gate {
       display: flex;
       width: 100%;

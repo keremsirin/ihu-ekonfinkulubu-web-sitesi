@@ -43,14 +43,35 @@ h4 {
 }
 
 .page_title {
- display: flex;
- align-content: center;
- justify-content: center;
- align-items: center;
- width: 100%;
- height: 140px;
- //background-color: $color-blue;
- //color: white;
- color: $color-blue;
- border-bottom: 1px solid #ddd;
+display: none;
+
+ @include mq("tablet") {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+  //background-color: $color-blue;
+  //color: white;
+  color: $color-blue;
+  border-bottom: 1px solid #ddd;
+ }
+}
+
+.page_title_mobile {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  //background-color: $color-blue;
+  //color: white;
+  color: $color-blue;
+  border-bottom: 1px solid #ddd;
+
+  @include mq("tablet") {
+    display: none;
+  }
 }
