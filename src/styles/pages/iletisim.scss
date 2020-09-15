@@ -92,8 +92,10 @@
                     padding-left: 10px;
                     padding-right: 10px;
                     font-size: 34px;
+                    color: $color-blue;
                     @include mq("tablet") {
                         font-size: 40px;
+                        color: $color-blue;
                     }
                 }
             }
@@ -128,8 +130,10 @@
                 }
                 i {
                     font-size: 26px;
+                    color: $color-blue;
                     @include mq("tablet") {
                         font-size: 32px;
+                        color: $color-blue;
                     }
                 }               
             }
@@ -164,8 +168,10 @@
                 }
                 i {
                     font-size: 34px;
+                    color: $color-blue;
                     @include mq("tablet") {
                         font-size: 40px;
+                        color: $color-blue;
                     }
                 }               
             }
