@@ -1,0 +1,62 @@
+.hakkimizda {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    
+
+    &-vm {
+        display: flex;
+        width: 100%;
+        height: 800px;
+        background-color: white;
+        flex-direction: column;
+        padding-top: 40px;
+        align-items: center;
+
+        h2 {
+            color: $color-light-blue;
+        }
+
+        h4 {
+            color: $color-blue;
+        }
+
+        p {
+            padding-top: $gutter;
+        }
+
+        &-vizyon {
+            width: 100%;
+            height: auto;
+            padding-bottom: 40px;
+            padding-left: $gutter;
+            padding-right: $gutter;
+        }
+
+        &-misyon {
+            width: 100%;
+            height: auto;
+            padding-bottom: 40px;
+            padding-left: $gutter;
+            padding-right: $gutter;
+        }
+
+        &-yonetim {
+            width: 100%;
+            height: auto;
+            padding-bottom: 40px;
+            padding-left: $gutter;
+            padding-right: $gutter;
+
+            h4 {
+                display: inline-block;
+                padding-right: 4px;
+            }
+
+            p {
+                display: inline-block;
+            }
+           
+        }
+    }
+}
