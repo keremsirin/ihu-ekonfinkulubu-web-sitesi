@@ -19,7 +19,9 @@
             height: 40%;
             width: 100%;
             margin: 40px 0;
-            background-color: red;
+            justify-content: space-around;
+            
+            //background-color: red;
 
             a {
                 padding-left: $gutter;
@@ -37,7 +39,7 @@
                 width: 100%;
                 height: 10%;
                 align-items: center;
-                margin-bottom: $gutter;
+                // margin-bottom: 40px;
                 &-icon {
                     display: flex;
                     width: 40px;
@@ -55,7 +57,7 @@
                 width: 100%;
                 height: 10%;
                 align-items: center;
-                margin-bottom: $gutter;
+                // margin-bottom: 40px;
                 &-icon {
                     display: flex;
                     width: 40px;
@@ -73,7 +75,7 @@
                 width: 100%;
                 height: 10%;
                 align-items: center;
-                margin-bottom: $gutter;
+                // margin-bottom: 40px;
                 &-icon {
                     display: flex;
                     width: 40px;
@@ -94,7 +96,6 @@
             display: flex;
             width: 100%;
             height: 40%;
-            background-color: yellow;
         }
     }
 
