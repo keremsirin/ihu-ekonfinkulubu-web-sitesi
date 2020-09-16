@@ -787,12 +787,52 @@ h4 {
       padding-bottom: 40px;
       padding-left: 20px;
       padding-right: 20px; }
-      .hakkimizda-vm-yonetim h2 {
-        justify-content: flex-start; }
+      .hakkimizda-vm-yonetim-cont1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 20px; }
+      .hakkimizda-vm-yonetim-cont2 {
+        display: flex;
+        width: 100%;
+        padding-top: 20px; }
+        .hakkimizda-vm-yonetim-cont2-2 {
+          display: flex;
+          width: 40%;
+          margin-left: 10%; }
+        .hakkimizda-vm-yonetim-cont2-3 {
+          display: flex;
+          width: 40%;
+          margin-left: 10%; }
+      .hakkimizda-vm-yonetim-cont3 {
+        display: flex;
+        width: 100%;
+        padding-top: 20px; }
+        .hakkimizda-vm-yonetim-cont3-4 {
+          display: flex;
+          width: 40%;
+          margin-left: 10%; }
+        .hakkimizda-vm-yonetim-cont3-5 {
+          display: flex;
+          width: 40%;
+          margin-left: 10%; }
+      .hakkimizda-vm-yonetim-cont4 {
+        display: flex;
+        width: 100%;
+        padding-top: 20px; }
+        .hakkimizda-vm-yonetim-cont4-6 {
+          display: flex;
+          width: 40%;
+          margin-left: 10%; }
+        .hakkimizda-vm-yonetim-cont4-7 {
+          display: flex;
+          width: 40%;
+          margin-left: 10%; }
       .hakkimizda-vm-yonetim h4 {
         display: inline-block;
         padding-right: 4px; }
       .hakkimizda-vm-yonetim p {
+        padding-top: 0;
         display: inline-block; }
 
 .iletisim {

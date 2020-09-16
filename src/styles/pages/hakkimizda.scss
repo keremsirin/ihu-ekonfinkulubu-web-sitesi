@@ -50,9 +50,61 @@
             padding-left: $gutter;
             padding-right: $gutter;
 
-            h2 {
-                justify-content: flex-start;
+            &-cont1 {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                padding-top: $gutter;
             }
+
+            &-cont2 {
+                display: flex;
+                width: 100%;
+                padding-top: $gutter;
+                &-2 {
+                    display: flex;
+                    width: 40%;
+                    margin-left: 10%;
+                }
+                &-3 {
+                    display: flex;
+                    width: 40%;
+                    margin-left: 10%;
+                }
+            }
+
+            &-cont3 {
+                display: flex;
+                width: 100%;
+                padding-top: $gutter;
+                &-4 {
+                    display: flex;
+                    width: 40%;
+                    margin-left: 10%;
+                }
+                &-5 {
+                    display: flex;
+                    width: 40%;
+                    margin-left: 10%;
+                }
+            }
+
+            &-cont4 {
+                display: flex;
+                width: 100%;
+                padding-top: $gutter;
+                &-6 {
+                    display: flex;
+                    width: 40%;
+                    margin-left: 10%;
+                }
+                &-7 {
+                    display: flex;
+                    width: 40%;
+                    margin-left: 10%;
+                }
+            }
+
 
             h4 {
                 display: inline-block;
@@ -60,6 +112,7 @@
             }
 
             p {
+                padding-top: 0;
                 display: inline-block;
             }
            
