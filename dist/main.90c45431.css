@@ -762,7 +762,9 @@ h4 {
     padding-top: 40px;
     align-items: center; }
     .hakkimizda-vm h2 {
-      color: #6bb8ca; }
+      color: #6bb8ca;
+      display: flex;
+      justify-content: center; }
     .hakkimizda-vm h4 {
       color: #2f5369; }
     .hakkimizda-vm p {
@@ -785,6 +787,8 @@ h4 {
       padding-bottom: 40px;
       padding-left: 20px;
       padding-right: 20px; }
+      .hakkimizda-vm-yonetim h2 {
+        justify-content: flex-start; }
       .hakkimizda-vm-yonetim h4 {
         display: inline-block;
         padding-right: 4px; }

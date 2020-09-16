@@ -15,6 +15,8 @@
 
         h2 {
             color: $color-light-blue;
+            display: flex;
+            justify-content: center;
         }
 
         h4 {
@@ -47,6 +49,10 @@
             padding-bottom: 40px;
             padding-left: $gutter;
             padding-right: $gutter;
+
+            h2 {
+                justify-content: flex-start;
+            }
 
             h4 {
                 display: inline-block;
