@@ -63,16 +63,21 @@
                 display: flex;
                 width: 100%;
                 padding-top: $gutter;
+                justify-content: center;
+                text-align: center;
+
                 &-2 {
                     display: flex;
-                    width: 40%;
-                    margin-left: 10%;
+                    width: 50%;
+                    justify-content: center;
                     
                 }
                 &-3 {
                     display: flex;
-                    width: 40%;
-                    margin-left: 10%;
+                    width: 50%;
+                    justify-content: center;
+
+
                 }               
             }
 
@@ -81,47 +86,30 @@
                 width: 100%;
                 height: 390px;
                 padding-top: $gutter;
+                margin-bottom: $gutter;
+                justify-content: center;
 
                 &-1 {
                     display: flex;
-                    width: 100%;
+                    width: 50%;
+                    justify-content: center;
+                    background-color: red;
+
+                }
+
+                
+                &-2, &-4, &-6 {
+                    display: flex;
+                    width: 50%;
+                    background-color: red;
                     justify-content: center;
                 }
-
-                &-2 {
+                
+                &-3, &-5, &-7 {
                     display: flex;
-                    width: 40%;
-                    margin-left: 10%;
-                }
-
-                &-3 {
-                    display: flex;
-                    width: 40%;
-                    margin-left: 10%;
-                }
-
-                &-4 {
-                    display: flex;
-                    width: 40%;
-                    margin-left: 10%;
-                }
-
-                &-5 {
-                    display: flex;
-                    width: 40%;
-                    margin-left: 10%;
-                }
-
-                &-6 {
-                    display: flex;
-                    width: 40%;
-                    margin-left: 10%;
-                }
-
-                &-7 {
-                    display: flex;
-                    width: 40%;
-                    margin-left: 10%;
+                    width: 50%;
+                    background-color: #ddd;
+                    justify-content: center;
                 }
 
                 .LI-profile-badge {
@@ -136,15 +124,17 @@
                 display: flex;
                 width: 100%;
                 padding-top: $gutter;
+                justify-content: center;
+
                 &-4 {
                     display: flex;
-                    width: 40%;
-                    margin-left: 10%;
+                    width: 50%;
+                    justify-content: center;
                 }
                 &-5 {
                     display: flex;
-                    width: 40%;
-                    margin-left: 10%;
+                    width: 50%;
+                    justify-content: center;
                 }
             }
 
@@ -152,15 +142,18 @@
                 display: flex;
                 width: 100%;
                 padding-top: $gutter;
+                justify-content: center;
+                text-align: center;
+
                 &-6 {
                     display: flex;
-                    width: 40%;
-                    margin-left: 10%;
+                    width: 50%;
+                    justify-content: center;
                 }
                 &-7 {
                     display: flex;
-                    width: 40%;
-                    margin-left: 10%;
+                    width: 50%;
+                    justify-content: center;
                 }
             }
 
