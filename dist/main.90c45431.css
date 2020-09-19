@@ -753,7 +753,7 @@ h4 {
 .hakkimizda {
   display: flex;
   width: 100%;
-  height: auto; }
+  height: 2800px; }
   @media (min-width: 768px) {
     .hakkimizda {
       display: flex;
