@@ -753,14 +753,18 @@ h4 {
 .hakkimizda {
   display: flex;
   width: 100%;
-  height: 2200px; }
+  height: auto; }
+  @media (min-width: 768px) {
+    .hakkimizda {
+      display: flex;
+      width: 100%;
+      height: 2800px; } }
   .hakkimizda-vm {
     display: flex;
     width: 100%;
     height: 800px;
     flex-direction: column;
-    padding-top: 40px;
-    align-items: center; }
+    padding-top: 40px; }
     .hakkimizda-vm h2 {
       color: #6bb8ca;
       display: flex;
@@ -768,7 +772,7 @@ h4 {
     .hakkimizda-vm h4 {
       color: #2f5369; }
     .hakkimizda-vm p {
-      padding-top: 20px; }
+      display: inline-block; }
     .hakkimizda-vm-vizyon {
       width: 100%;
       height: auto;
@@ -776,6 +780,18 @@ h4 {
       padding-left: 20px;
       padding-right: 20px;
       text-align: center; }
+      .hakkimizda-vm-vizyon h2 {
+        padding-bottom: 20px; }
+      @media (min-width: 768px) {
+        .hakkimizda-vm-vizyon {
+          width: 100%;
+          height: auto;
+          padding-bottom: 40px;
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center; }
+          .hakkimizda-vm-vizyon h2 {
+            padding-bottom: 20px; } }
     .hakkimizda-vm-misyon {
       width: 100%;
       height: auto;
@@ -783,88 +799,79 @@ h4 {
       padding-left: 20px;
       padding-right: 20px;
       text-align: center; }
+      .hakkimizda-vm-misyon h2 {
+        padding-bottom: 20px; }
+      @media (min-width: 768px) {
+        .hakkimizda-vm-misyon {
+          width: 100%;
+          height: auto;
+          padding-bottom: 40px;
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center; }
+          .hakkimizda-vm-misyon h2 {
+            padding-bottom: 20px; } }
     .hakkimizda-vm-yonetim {
+      display: flex;
+      flex-direction: column;
       width: 100%;
       height: auto;
-      padding-bottom: 40px;
       padding-left: 20px;
       padding-right: 20px; }
+      .hakkimizda-vm-yonetim h2 {
+        padding-bottom: 20px; }
+      .hakkimizda-vm-yonetim p {
+        padding-left: 6px; }
       .hakkimizda-vm-yonetim-cont1 {
         display: flex;
         width: 100%;
-        justify-content: center;
-        padding-top: 20px; }
-      .hakkimizda-vm-yonetim-cont2 {
-        display: flex;
-        width: 100%;
-        padding-top: 20px;
-        justify-content: center;
-        text-align: center; }
-        .hakkimizda-vm-yonetim-cont2-2 {
+        height: auto;
+        flex-direction: column; }
+        .hakkimizda-vm-yonetim-cont1-1 {
           display: flex;
-          width: 50%;
+          width: 100%;
+          height: auto;
           justify-content: center; }
-        .hakkimizda-vm-yonetim-cont2-3 {
+        .hakkimizda-vm-yonetim-cont1-link {
           display: flex;
-          width: 50%;
-          justify-content: center; }
-      .hakkimizda-vm-yonetim-link {
-        display: flex;
-        width: 100%;
-        height: 390px;
-        padding-top: 20px;
-        margin-bottom: 20px;
-        justify-content: center; }
-        .hakkimizda-vm-yonetim-link-1 {
-          display: flex;
-          width: 50%;
+          width: 100%;
+          height: auto;
           justify-content: center;
-          background-color: red; }
-        .hakkimizda-vm-yonetim-link-2, .hakkimizda-vm-yonetim-link-4, .hakkimizda-vm-yonetim-link-6 {
-          display: flex;
-          width: 50%;
-          background-color: red;
-          justify-content: center; }
-        .hakkimizda-vm-yonetim-link-3, .hakkimizda-vm-yonetim-link-5, .hakkimizda-vm-yonetim-link-7 {
-          display: flex;
-          width: 50%;
-          background-color: #ddd;
-          justify-content: center; }
-        .hakkimizda-vm-yonetim-link .LI-profile-badge {
-          display: flex; }
-      .hakkimizda-vm-yonetim-cont3 {
+          padding-bottom: 20px; }
+          .hakkimizda-vm-yonetim-cont1-link-1 {
+            display: flex;
+            width: 50%;
+            height: 500px;
+            justify-content: center; }
+            .hakkimizda-vm-yonetim-cont1-link-1 img {
+              display: flex;
+              width: 280px;
+              height: 490px; }
+      .hakkimizda-vm-yonetim-cont2, .hakkimizda-vm-yonetim-cont3, .hakkimizda-vm-yonetim-cont4 {
         display: flex;
         width: 100%;
-        padding-top: 20px;
-        justify-content: center; }
-        .hakkimizda-vm-yonetim-cont3-4 {
+        height: auto;
+        flex-direction: row; }
+        .hakkimizda-vm-yonetim-cont2-2, .hakkimizda-vm-yonetim-cont2-3, .hakkimizda-vm-yonetim-cont2-4, .hakkimizda-vm-yonetim-cont2-5, .hakkimizda-vm-yonetim-cont2-6, .hakkimizda-vm-yonetim-cont2-7, .hakkimizda-vm-yonetim-cont3-2, .hakkimizda-vm-yonetim-cont3-3, .hakkimizda-vm-yonetim-cont3-4, .hakkimizda-vm-yonetim-cont3-5, .hakkimizda-vm-yonetim-cont3-6, .hakkimizda-vm-yonetim-cont3-7, .hakkimizda-vm-yonetim-cont4-2, .hakkimizda-vm-yonetim-cont4-3, .hakkimizda-vm-yonetim-cont4-4, .hakkimizda-vm-yonetim-cont4-5, .hakkimizda-vm-yonetim-cont4-6, .hakkimizda-vm-yonetim-cont4-7 {
           display: flex;
           width: 50%;
+          height: auto;
           justify-content: center; }
-        .hakkimizda-vm-yonetim-cont3-5 {
+        .hakkimizda-vm-yonetim-cont2-link, .hakkimizda-vm-yonetim-cont3-link, .hakkimizda-vm-yonetim-cont4-link {
           display: flex;
-          width: 50%;
-          justify-content: center; }
-      .hakkimizda-vm-yonetim-cont4 {
-        display: flex;
-        width: 100%;
-        padding-top: 20px;
-        justify-content: center;
-        text-align: center; }
-        .hakkimizda-vm-yonetim-cont4-6 {
-          display: flex;
-          width: 50%;
-          justify-content: center; }
-        .hakkimizda-vm-yonetim-cont4-7 {
-          display: flex;
-          width: 50%;
-          justify-content: center; }
-      .hakkimizda-vm-yonetim h4 {
-        display: inline-block;
-        padding-right: 4px; }
-      .hakkimizda-vm-yonetim p {
-        padding-top: 0;
-        display: inline-block; }
+          width: 100%;
+          height: auto;
+          justify-content: center;
+          padding-bottom: 20px; }
+          .hakkimizda-vm-yonetim-cont2-link-2, .hakkimizda-vm-yonetim-cont2-link-3, .hakkimizda-vm-yonetim-cont2-link-4, .hakkimizda-vm-yonetim-cont2-link-5, .hakkimizda-vm-yonetim-cont2-link-6, .hakkimizda-vm-yonetim-cont2-link-7, .hakkimizda-vm-yonetim-cont3-link-2, .hakkimizda-vm-yonetim-cont3-link-3, .hakkimizda-vm-yonetim-cont3-link-4, .hakkimizda-vm-yonetim-cont3-link-5, .hakkimizda-vm-yonetim-cont3-link-6, .hakkimizda-vm-yonetim-cont3-link-7, .hakkimizda-vm-yonetim-cont4-link-2, .hakkimizda-vm-yonetim-cont4-link-3, .hakkimizda-vm-yonetim-cont4-link-4, .hakkimizda-vm-yonetim-cont4-link-5, .hakkimizda-vm-yonetim-cont4-link-6, .hakkimizda-vm-yonetim-cont4-link-7 {
+            display: flex;
+            width: 50%;
+            height: 500px;
+            justify-content: center; }
+            .hakkimizda-vm-yonetim-cont2-link-2 img, .hakkimizda-vm-yonetim-cont2-link-3 img, .hakkimizda-vm-yonetim-cont2-link-4 img, .hakkimizda-vm-yonetim-cont2-link-5 img, .hakkimizda-vm-yonetim-cont2-link-6 img, .hakkimizda-vm-yonetim-cont2-link-7 img, .hakkimizda-vm-yonetim-cont3-link-2 img, .hakkimizda-vm-yonetim-cont3-link-3 img, .hakkimizda-vm-yonetim-cont3-link-4 img, .hakkimizda-vm-yonetim-cont3-link-5 img, .hakkimizda-vm-yonetim-cont3-link-6 img, .hakkimizda-vm-yonetim-cont3-link-7 img, .hakkimizda-vm-yonetim-cont4-link-2 img, .hakkimizda-vm-yonetim-cont4-link-3 img, .hakkimizda-vm-yonetim-cont4-link-4 img, .hakkimizda-vm-yonetim-cont4-link-5 img, .hakkimizda-vm-yonetim-cont4-link-6 img, .hakkimizda-vm-yonetim-cont4-link-7 img {
+              display: flex;
+              width: 280px;
+              height: 490px; }
 
 .iletisim {
   display: flex;

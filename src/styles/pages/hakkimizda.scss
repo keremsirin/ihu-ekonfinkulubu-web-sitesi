@@ -1,31 +1,31 @@
 .hakkimizda {
     display: flex;
     width: 100%;
-    height: 2200px;
-    
+    height: auto;
+
+    @include mq("tablet") {
+        display: flex;
+        width: 100%;
+        height: 2800px;
+    }
 
     &-vm {
         display: flex;
         width: 100%;
         height: 800px;
-        //background-color: white;
         flex-direction: column;
         padding-top: 40px;
-        align-items: center;
 
         h2 {
             color: $color-light-blue;
             display: flex;
             justify-content: center;
         }
-
         h4 {
             color: $color-blue;
         }
-
         p {
-            padding-top: $gutter;
-            //font-size: $font-size-medium;
+            display: inline-block;
         }
 
         &-vizyon {
@@ -35,6 +35,23 @@
             padding-left: $gutter;
             padding-right: $gutter;
             text-align: center;
+
+            h2 {
+                padding-bottom: $gutter;
+            }
+
+            @include mq("tablet") {
+                width: 100%;
+                height: auto;
+                padding-bottom: 40px;
+                padding-left: $gutter;
+                padding-right: $gutter;
+                text-align: center;
+
+                h2 {
+                    padding-bottom: $gutter;
+                }
+            }
         }
 
         &-misyon {
@@ -44,131 +61,112 @@
             padding-left: $gutter;
             padding-right: $gutter;
             text-align: center;
+
+            h2 {
+                padding-bottom: $gutter;
+            }
+
+            @include mq("tablet") {
+                width: 100%;
+                height: auto;
+                padding-bottom: 40px;
+                padding-left: $gutter;
+                padding-right: $gutter;
+                text-align: center;
+
+                h2 {
+                    padding-bottom: $gutter;
+                }
+            }
         }
 
         &-yonetim {
+            display: flex;
+            flex-direction: column;
             width: 100%;
             height: auto;
-            padding-bottom: 40px;
             padding-left: $gutter;
             padding-right: $gutter;
+
+            h2 {
+                padding-bottom: $gutter;
+            }
+
+            p {
+                padding-left: 6px;
+            }
 
             &-cont1 {
                 display: flex;
                 width: 100%;
-                justify-content: center;
-                padding-top: $gutter;
-            }
-
-            &-cont2 {
-                display: flex;
-                width: 100%;
-                padding-top: $gutter;
-                justify-content: center;
-                text-align: center;
-
-                &-2 {
-                    display: flex;
-                    width: 50%;
-                    justify-content: center;
-                    
-                }
-                &-3 {
-                    display: flex;
-                    width: 50%;
-                    justify-content: center;
-
-
-                }               
-            }
-
-            &-link {
-                display: flex;
-                width: 100%;
-                height: 390px;
-                padding-top: $gutter;
-                margin-bottom: $gutter;
-                justify-content: center;
+                height: auto;
+                flex-direction: column;
 
                 &-1 {
                     display: flex;
-                    width: 50%;
-                    justify-content: center;
-                    background-color: red;
-
-                }
-
-                
-                &-2, &-4, &-6 {
-                    display: flex;
-                    width: 50%;
-                    background-color: red;
-                    justify-content: center;
-                }
-                
-                &-3, &-5, &-7 {
-                    display: flex;
-                    width: 50%;
-                    background-color: #ddd;
+                    width: 100%;
+                    height: auto;
                     justify-content: center;
                 }
 
-                .LI-profile-badge {
+                &-link {
                     display: flex;
-                    
-                    
+                    width: 100%;
+                    height: auto;
+                    justify-content: center;
+                    padding-bottom: $gutter;
+
+                    &-1 {
+                        display: flex;
+                        width: 50%;
+                        height: 500px;
+                        justify-content: center;
+
+                        img {
+                            display: flex;
+                            width: 280px;
+                            height: 490px;
+                        }
+                    }
                 }
             }
-            
 
-            &-cont3 {
+            &-cont2, &-cont3, &-cont4 {
                 display: flex;
                 width: 100%;
-                padding-top: $gutter;
-                justify-content: center;
+                height: auto;
+                flex-direction: row;
+                //flex-direction: column;
 
-                &-4 {
+                &-2, &-3, &-4, &-5, &-6, &-7 {
                     display: flex;
                     width: 50%;
+                    height: auto;
                     justify-content: center;
                 }
-                &-5 {
+
+                &-link {
                     display: flex;
-                    width: 50%;
+                    width: 100%;
+                    height: auto;
                     justify-content: center;
+                    padding-bottom: $gutter;
+
+
+                    &-2, &-3, &-4, &-5, &-6, &-7 {
+                        display: flex;
+                        width: 50%;
+                        height: 500px;
+                        justify-content: center;
+
+                        img {
+                            display: flex;
+                            width: 280px;
+                            height: 490px;
+                        }
+                    }
                 }
             }
-
-            &-cont4 {
-                display: flex;
-                width: 100%;
-                padding-top: $gutter;
-                justify-content: center;
-                text-align: center;
-
-                &-6 {
-                    display: flex;
-                    width: 50%;
-                    justify-content: center;
-                }
-                &-7 {
-                    display: flex;
-                    width: 50%;
-                    justify-content: center;
-                }
-            }
-
-
-            h4 {
-                display: inline-block;
-                padding-right: 4px;
-            }
-
-            p {
-                padding-top: 0;
-                display: inline-block;
-            }
-           
         }
     }
 }
