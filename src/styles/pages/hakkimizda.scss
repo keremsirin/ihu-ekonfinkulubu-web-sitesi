@@ -12,7 +12,7 @@
     &-vm {
         display: flex;
         width: 100%;
-        height: 2800px;
+        height: 2800px; //değişebilir
         flex-direction: column;
         padding-top: 40px;
 
@@ -122,10 +122,29 @@
                         height: 500px;
                         justify-content: center;
 
+                        a {
+                            display: flex;
+                            position: relative; 
+                            justify-content: center;
+                            width: 50px;
+                            height: 20px;
+                            top: 360px; 
+                            left: -162px;
+                            color:white; 
+                            font-size: $font-size-small;
+                            font-style: italic;
+
+                            &:hover {
+                                color: $color-light-blue;
+                            }
+                        }
+
                         img {
                             display: flex;
+                            position: relative;
                             width: 280px;
                             height: 490px;
+                            margin-left: 50px;
                         }
                     }
                 }
@@ -157,16 +176,107 @@
                         display: flex;
                         width: 50%;
                         height: 500px;
+                        //flex-direction: column;
                         justify-content: center;
+                        justify-items: center;
+                        
+
+                        a {
+                            display: flex;
+                            position: relative; 
+                            justify-content: center;
+                            width: 50px;
+                            height: 20px;
+                            top: 360px; 
+                            left: -162px;
+                            color:white; 
+                            font-size: $font-size-small;
+                            font-style: italic;
+
+                            &:hover {
+                                color: $color-light-blue;
+                            }
+                        }
+
+                        
+
+                        
 
                         img {
                             display: flex;
                             width: 280px;
                             height: 490px;
+                            position: relative;
+                            margin-left: 50px;
                         }
+
+                        
                     }
                 }
             }
         }
     }
+}
+
+
+.button_container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-start;
+    background-color: red;
+
+    &-1 {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        background-color: #ddd;
+        justify-content: center;
+
+        &-btn1 {
+            display: flex;
+            width: 200px;
+            height: 40px;
+            background-color: yellow;
+        }
+    }
+    &-2 {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        background-color: #000;
+        justify-content: center;
+
+        &-btn2 {
+            display: flex;
+            width: 200px;
+            height: 40px;
+            background-color: red;
+        }
+    }
+    
+
+    &-btn_in1, &-btn_in2 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 200px;
+        height: 40px;
+        background-color: #007bb5;
+        // top: 390px; 
+        // left: -262px;
+        border-radius: $border-radius;
+
+        img {
+            display: flex;
+            width: 40px ;
+            height: 40px ;
+            justify-content: center;
+            // margin-left: 0;
+            //margin-top: 6px;
+            
+
+        }
+    }
+
 }
