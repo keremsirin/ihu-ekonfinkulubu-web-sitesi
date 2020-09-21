@@ -414,7 +414,7 @@ h4 {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 1; }
+  z-index: 2; }
   .Header .container {
     position: relative;
     display: flex;
@@ -753,16 +753,16 @@ h4 {
 .hakkimizda {
   display: flex;
   width: 100%;
-  height: 2800px; }
+  height: auto; }
   @media (min-width: 768px) {
     .hakkimizda {
       display: flex;
       width: 100%;
-      height: 2800px; } }
+      height: auto; } }
   .hakkimizda-vm {
     display: flex;
     width: 100%;
-    height: 2800px;
+    height: 2500px;
     flex-direction: column;
     padding-top: 40px; }
     .hakkimizda-vm h2 {
@@ -826,7 +826,8 @@ h4 {
         display: flex;
         width: 100%;
         height: auto;
-        flex-direction: column; }
+        flex-direction: column;
+        margin-top: -50px; }
         .hakkimizda-vm-yonetim-cont1-1 {
           display: flex;
           width: 100%;
@@ -866,7 +867,8 @@ h4 {
         display: flex;
         width: 100%;
         height: auto;
-        flex-direction: row; }
+        flex-direction: row;
+        margin-top: -50px; }
         .hakkimizda-vm-yonetim-cont2-2, .hakkimizda-vm-yonetim-cont2-3, .hakkimizda-vm-yonetim-cont2-4, .hakkimizda-vm-yonetim-cont2-5, .hakkimizda-vm-yonetim-cont2-6, .hakkimizda-vm-yonetim-cont2-7, .hakkimizda-vm-yonetim-cont3-2, .hakkimizda-vm-yonetim-cont3-3, .hakkimizda-vm-yonetim-cont3-4, .hakkimizda-vm-yonetim-cont3-5, .hakkimizda-vm-yonetim-cont3-6, .hakkimizda-vm-yonetim-cont3-7, .hakkimizda-vm-yonetim-cont4-2, .hakkimizda-vm-yonetim-cont4-3, .hakkimizda-vm-yonetim-cont4-4, .hakkimizda-vm-yonetim-cont4-5, .hakkimizda-vm-yonetim-cont4-6, .hakkimizda-vm-yonetim-cont4-7 {
           display: flex;
           width: 50%;
@@ -908,43 +910,75 @@ h4 {
   display: flex;
   width: 100%;
   height: 50px;
-  justify-content: flex-start;
-  background-color: red; }
+  background-color: transparent; }
   .button_container-1 {
     display: flex;
-    width: 50%;
-    height: 100%;
-    background-color: #ddd;
-    justify-content: center; }
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    background-color: transparent; }
     .button_container-1-btn1 {
       display: flex;
       width: 200px;
       height: 40px;
-      background-color: yellow; }
+      background-color: #0a75b5;
+      margin-top: 410px;
+      margin-left: 4px;
+      z-index: 1; }
+      .button_container-1-btn1-btn_linkedin {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: url(/linkedin-logo.847196b5.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        outline: none; }
   .button_container-2 {
     display: flex;
     width: 50%;
     height: 100%;
-    background-color: #000;
     justify-content: center; }
     .button_container-2-btn2 {
       display: flex;
       width: 200px;
       height: 40px;
-      background-color: red; }
-  .button_container-btn_in1, .button_container-btn_in2 {
+      background-color: #0a75b5;
+      margin-top: 410px;
+      margin-left: 4px;
+      z-index: 1; }
+      .button_container-2-btn2-btn_linkedin {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: url(/linkedin-logo.847196b5.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        outline: none; }
+  .button_container-3 {
     display: flex;
-    position: relative;
-    justify-content: center;
-    width: 200px;
-    height: 40px;
-    background-color: #007bb5;
-    border-radius: 5px; }
-    .button_container-btn_in1 img, .button_container-btn_in2 img {
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    justify-content: center; }
+    .button_container-3-btn3 {
       display: flex;
-      width: 40px;
+      width: 200px;
       height: 40px;
-      justify-content: center; }
+      background-color: #0a75b5;
+      margin-top: 410px;
+      margin-left: 4px;
+      z-index: 1; }
+      .button_container-3-btn3-btn_linkedin {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background: url(/linkedin-logo.847196b5.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        outline: none; }
 
 .iletisim {
   display: flex;
