@@ -368,7 +368,6 @@
                     &-4,
                     &-6 {
                         margin-bottom: 60px;
-
                         @include mq("tablet") {
                             margin-bottom: 0;
                         }
@@ -397,6 +396,8 @@
     height: 50px;
     background-color: transparent;
     flex-direction: column;
+    position: relative;
+    align-items: center;
 
     @include mq("tablet") {
         display: flex;
@@ -529,7 +530,8 @@
         height: 100%;
         background-color: transparent;
         justify-content: center;
-        margin-top: 510px;
+        position: absolute;
+        top: 578px;
 
 
         @include mq("tablet") {
@@ -539,6 +541,7 @@
             margin-top: 0;
             background-color: transparent;
             justify-content: center;
+            position: static;
         }
 
         &-btn3 {
