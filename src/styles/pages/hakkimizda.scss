@@ -12,9 +12,17 @@
     &-vm {
         display: flex;
         width: 100%;
-        height: 2500px; //değişebilir
+        height: 4400px; //değişebilir
         flex-direction: column;
         padding-top: 40px;
+
+        @include mq("tablet") {
+            display: flex;
+            width: 100%;
+            height: 2500px; //değişebilir
+            flex-direction: column;
+            padding-top: 40px;
+        }
 
         h2 {
             color: $color-light-blue;
@@ -87,15 +95,28 @@
             flex-direction: column;
             width: 100%;
             height: auto;
-            padding-left: $gutter;
-            padding-right: $gutter;
+            // padding-left: $gutter;
+            // padding-right: $gutter;
+
+            @include mq("tablet") {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
 
             h2 {
                 padding-bottom: $gutter;
             }
 
             p {
-                padding-left: 6px;
+                padding-left: 4px;
+
+                @include mq("tablet") {
+                    padding-left: 6px;
+                }
             }
 
             &-cont1 {
@@ -105,11 +126,26 @@
                 flex-direction: column;
                 margin-top: -50px;
 
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    flex-direction: column;
+                    margin-top: -50px;
+                }
+
                 &-1 {
                     display: flex;
                     width: 100%;
                     height: auto;
                     justify-content: center;
+
+                    @include mq("tablet") {
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        justify-content: center;
+                    }
                 }
 
                 &-link {
@@ -119,11 +155,26 @@
                     justify-content: center;
                     padding-bottom: $gutter;
 
+                    @include mq("tablet") {
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        justify-content: center;
+                        padding-bottom: $gutter;
+                    }
+
                     &-1 {
                         display: flex;
                         width: 50%;
                         height: 500px;
                         justify-content: center;
+
+                        @include mq("tablet") {
+                            display: flex;
+                            width: 50%;
+                            height: 500px;
+                            justify-content: center;
+                        }
 
                         a {
                             display: flex;
@@ -137,6 +188,19 @@
                             font-size: $font-size-small;
                             font-style: italic;
 
+                            @include mq("tablet") {
+                                display: flex;
+                                position: relative;
+                                justify-content: center;
+                                width: 50px;
+                                height: 20px;
+                                top: 360px;
+                                left: -162px;
+                                color: white;
+                                font-size: $font-size-small;
+                                font-style: italic;
+                            }
+
                             &:hover {
                                 color: $color-light-blue;
                             }
@@ -148,6 +212,14 @@
                             width: 280px;
                             height: 490px;
                             margin-left: 50px;
+
+                            @include mq("tablet") {
+                                display: flex;
+                                position: relative;
+                                width: 280px;
+                                height: 490px;
+                                margin-left: 50px;
+                            }
                         }
                     }
                 }
@@ -159,9 +231,18 @@
                 display: flex;
                 width: 100%;
                 height: auto;
-                flex-direction: row;
-                //flex-direction: column;
+                // flex-direction: row;
+                flex-direction: column;
                 margin-top: -50px;
+
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    flex-direction: row;
+                    // flex-direction: column;
+                    margin-top: -50px;
+                }
 
                 &-2,
                 &-3,
@@ -170,9 +251,28 @@
                 &-6,
                 &-7 {
                     display: flex;
-                    width: 50%;
+                    width: 100%;
                     height: auto;
                     justify-content: center;
+
+                    .vm-dnt {
+                        display: none;
+                    }
+
+                    @include mq("tablet") {
+                        display: flex;
+                        width: 50%;
+                        height: auto;
+                        justify-content: center;
+
+                        .vm-dnt {
+                            display: flex;
+                        }
+
+                        .vm-dnt_mobile {
+                            display: none;
+                        }
+                    }
                 }
 
                 &-link {
@@ -181,6 +281,17 @@
                     height: auto;
                     justify-content: center;
                     padding-bottom: $gutter;
+                    flex-direction: column;
+
+                    @include mq("tablet") {
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        justify-content: center;
+                        padding-bottom: $gutter;
+                        flex-direction: row;
+
+                    }
 
                     &-2,
                     &-3,
@@ -189,11 +300,20 @@
                     &-6,
                     &-7 {
                         display: flex;
-                        width: 50%;
+                        width: 100%;
                         height: 500px;
                         //flex-direction: column;
                         justify-content: center;
                         justify-items: center;
+
+                        @include mq("tablet") {
+                            display: flex;
+                            width: 50%;
+                            height: 500px;
+                            //flex-direction: column;
+                            justify-content: center;
+                            justify-items: center;
+                        }
 
 
                         a {
@@ -208,6 +328,19 @@
                             font-size: $font-size-small;
                             font-style: italic;
 
+                            @include mq("tablet") {
+                                display: flex;
+                                position: relative;
+                                justify-content: center;
+                                width: 50px;
+                                height: 20px;
+                                top: 360px;
+                                left: -162px;
+                                color: white;
+                                font-size: $font-size-small;
+                                font-style: italic;
+                            }
+
                             &:hover {
                                 color: $color-light-blue;
                             }
@@ -219,9 +352,37 @@
                             height: 490px;
                             position: relative;
                             margin-left: 50px;
+
+
+                            @include mq("tablet") {
+                                display: flex;
+                                width: 280px;
+                                height: 490px;
+                                position: relative;
+                                margin-left: 50px;
+                            }
                         }
+                    }
 
+                    &-2,
+                    &-4,
+                    &-6 {
+                        margin-bottom: 60px;
 
+                        @include mq("tablet") {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            &-cont2,
+            &-cont3,
+            &-cont4 {
+                &-3, &-5, &-7 {
+                    transform: translateY(535px);
+                    @include mq("tablet") {
+                        transform: translateY(0);
                     }
                 }
             }
@@ -235,6 +396,15 @@
     width: 100%;
     height: 50px;
     background-color: transparent;
+    flex-direction: column;
+
+    @include mq("tablet") {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        flex-direction: row;
+    }
 
     &-1 {
         display: flex;
@@ -242,6 +412,14 @@
         height: 50px;
         justify-content: center;
         background-color: transparent;
+
+        @include mq("tablet") {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            justify-content: center;
+            background-color: transparent;
+        }
 
         &-btn1 {
             display: flex;
@@ -252,6 +430,16 @@
             margin-left: 4px;
             z-index: 1;
 
+            @include mq("tablet") {
+                display: flex;
+                width: 200px;
+                height: 40px;
+                background-color: #0a75b5;
+                margin-top: 410px;
+                margin-left: 4px;
+                z-index: 1;
+            }
+
             &-btn_linkedin {
                 display: flex;
                 width: 100%;
@@ -261,18 +449,39 @@
                 background-size: 30px;
                 background-position: center;
                 outline: none;
+
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    background: url(../../src/img/linkedin-logo.png);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+                    background-position: center;
+                    outline: none;
+                }
             }
         }
     }
 
     &-2 {
         display: flex;
-        width: 50%;
+        width: 100%;
         height: 100%;
         justify-content: center;
+        margin-top: 18px;
+
+        @include mq("tablet") {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            margin-top: 0;
+            justify-content: center;
+        }
 
         &-btn2 {
             display: flex;
+
             width: 200px;
             height: 40px;
             background-color: #0a75b5;
@@ -280,6 +489,16 @@
             margin-left: 4px;
             z-index: 1;
 
+            @include mq("tablet") {
+                display: flex;
+                width: 200px;
+                height: 40px;
+                background-color: #0a75b5;
+                margin-top: 410px;
+                margin-left: 4px;
+                z-index: 1;
+            }
+
             &-btn_linkedin {
                 display: flex;
                 width: 100%;
@@ -289,16 +508,38 @@
                 background-size: 30px;
                 background-position: center;
                 outline: none;
+
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    background: url(../../src/img/linkedin-logo.png);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+                    background-position: center;
+                    outline: none;
+                }
             }
         }
     }
 
     &-3 {
         display: flex;
-        width: 50%;
+        width: 100%;
         height: 100%;
         background-color: transparent;
         justify-content: center;
+        margin-top: 560px;
+
+
+        @include mq("tablet") {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            margin-top: 0;
+            background-color: transparent;
+            justify-content: center;
+        }
 
         &-btn3 {
             display: flex;
@@ -309,6 +550,16 @@
             margin-left: 4px;
             z-index: 1;
 
+            @include mq("tablet") {
+                display: flex;
+                width: 200px;
+                height: 40px;
+                background-color: #0a75b5;
+                margin-top: 410px;
+                margin-left: 4px;
+                z-index: 1;
+            }
+
             &-btn_linkedin {
                 display: flex;
                 width: 100%;
@@ -318,6 +569,17 @@
                 background-size: 30px;
                 background-position: center;
                 outline: none;
+
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    background: url(../../src/img/linkedin-logo.png);
+                    background-repeat: no-repeat;
+                    background-size: 30px;
+                    background-position: center;
+                    outline: none;
+                }
             }
         }
     }
