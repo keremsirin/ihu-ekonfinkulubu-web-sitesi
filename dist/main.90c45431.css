@@ -1067,6 +1067,8 @@ h4 {
       margin-top: 410px;
       margin-left: 4px;
       z-index: 1; }
+      .button_container-1-btn1:hover {
+        border: 1px solid #6bb8ca; }
       @media (min-width: 768px) {
         .button_container-1-btn1 {
           display: flex;
@@ -1075,7 +1077,9 @@ h4 {
           background-color: #0a75b5;
           margin-top: 410px;
           margin-left: 4px;
-          z-index: 1; } }
+          z-index: 1; }
+          .button_container-1-btn1:hover {
+            border: 1px solid #6bb8ca; } }
       .button_container-1-btn1-btn_linkedin {
         display: flex;
         width: 100%;
@@ -1116,6 +1120,8 @@ h4 {
       margin-top: 410px;
       margin-left: 4px;
       z-index: 1; }
+      .button_container-2-btn2:hover {
+        border: 1px solid #6bb8ca; }
       @media (min-width: 768px) {
         .button_container-2-btn2 {
           display: flex;
@@ -1124,7 +1130,9 @@ h4 {
           background-color: #0a75b5;
           margin-top: 410px;
           margin-left: 4px;
-          z-index: 1; } }
+          z-index: 1; }
+          .button_container-2-btn2:hover {
+            border: 1px solid #6bb8ca; } }
       .button_container-2-btn2-btn_linkedin {
         display: flex;
         width: 100%;
@@ -1169,6 +1177,8 @@ h4 {
       margin-top: 410px;
       margin-left: 4px;
       z-index: 1; }
+      .button_container-3-btn3:hover {
+        border: 1px solid #6bb8ca; }
       @media (min-width: 768px) {
         .button_container-3-btn3 {
           display: flex;
@@ -1177,7 +1187,9 @@ h4 {
           background-color: #0a75b5;
           margin-top: 410px;
           margin-left: 4px;
-          z-index: 1; } }
+          z-index: 1; }
+          .button_container-3-btn3:hover {
+            border: 1px solid #6bb8ca; } }
       .button_container-3-btn3-btn_linkedin {
         display: flex;
         width: 100%;
