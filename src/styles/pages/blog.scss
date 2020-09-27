@@ -1,0 +1,53 @@
+.blog {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: $gutter;
+
+    &-1 {
+        display: flex;
+        width: 60%;
+        height: auto;
+        background-color: grey;
+        margin-top: $gutter;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+    &-2 {
+        display: flex;
+        width: 60%;
+        height: auto;
+        background-color: #ddd;
+        margin-top: $gutter;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+    &-3 {
+        display: flex;
+        width: 60%;
+        height: auto;
+        background-color: grey;
+        margin-top: $gutter;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+    &-4 {
+        display: flex;
+        width: 60%;
+        height: auto;
+        background-color: #ddd;
+        margin-top: $gutter;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+}
