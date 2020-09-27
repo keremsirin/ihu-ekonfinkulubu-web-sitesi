@@ -430,6 +430,9 @@
             margin-top: 410px;
             margin-left: 4px;
             z-index: 1;
+            &:hover {
+                border: 1px solid $color-light-blue;
+            }
 
             @include mq("tablet") {
                 display: flex;
@@ -439,6 +442,9 @@
                 margin-top: 410px;
                 margin-left: 4px;
                 z-index: 1;
+                &:hover {
+                    border: 1px solid $color-light-blue;
+                }
             }
 
             &-btn_linkedin {
@@ -489,6 +495,9 @@
             margin-top: 410px;
             margin-left: 4px;
             z-index: 1;
+            &:hover {
+                border: 1px solid $color-light-blue;
+            }
 
             @include mq("tablet") {
                 display: flex;
@@ -498,6 +507,9 @@
                 margin-top: 410px;
                 margin-left: 4px;
                 z-index: 1;
+                &:hover {
+                    border: 1px solid $color-light-blue;
+                }
             }
 
             &-btn_linkedin {
@@ -552,6 +564,9 @@
             margin-top: 410px;
             margin-left: 4px;
             z-index: 1;
+            &:hover {
+                border: 1px solid $color-light-blue;
+            }
 
             @include mq("tablet") {
                 display: flex;
@@ -561,6 +576,9 @@
                 margin-top: 410px;
                 margin-left: 4px;
                 z-index: 1;
+                &:hover {
+                    border: 1px solid $color-light-blue;
+                }
             }
 
             &-btn_linkedin {
