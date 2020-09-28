@@ -1223,52 +1223,96 @@ h4 {
     font-size: 15px;
     background-color: transparent;
     color: #2f5369;
-    outline: none; }
+    outline: none;
+    margin-left: 6px;
+    font-weight: bold; }
     .blog .read:hover {
       color: #6bb8ca; }
+  .blog .blog_post {
+    text-align: justify; }
   .blog h2 {
     padding-bottom: 20px;
-    color: black; }
+    color: #2f5369; }
   .blog-1 {
     display: flex;
     width: 60%;
     height: auto;
-    background-color: grey;
+    background-color: #fcfcfc;
     margin-top: 20px;
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    flex-direction: column;
+    border: 1px solid #ddd; }
+    .blog-1-profile {
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      color: #6bb8ca;
+      font-weight: bold; }
   .blog-2 {
     display: flex;
     width: 60%;
     height: auto;
-    background-color: #ddd;
+    background-color: #fcfcfc;
     margin-top: 20px;
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    flex-direction: column;
+    border: 1px solid #ddd; }
+    .blog-2-profile {
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      color: #6bb8ca;
+      font-weight: bold; }
   .blog-3 {
     display: flex;
     width: 60%;
     height: auto;
-    background-color: grey;
+    background-color: #fcfcfc;
     margin-top: 20px;
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    flex-direction: column;
+    border: 1px solid #ddd; }
+    .blog-3-profile {
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      color: #6bb8ca;
+      font-weight: bold; }
   .blog-4 {
     display: flex;
     width: 60%;
     height: auto;
-    background-color: #ddd;
+    background-color: #fcfcfc;
     margin-top: 20px;
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    flex-direction: column;
+    border: 1px solid #ddd; }
+    .blog-4-profile {
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      color: #6bb8ca;
+      font-weight: bold; }
 
 .etkinlikler {
   display: flex;
