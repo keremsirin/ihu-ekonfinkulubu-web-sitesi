@@ -1,7 +1,20 @@
 $(".Header-switch").on("click", function () {
-    if($(".Header").is(".menu-show")) {
-        $(".Header").removeClass("menu-show")
-    } else {
-        $(".Header").addClass("menu-show")
-    }
+  if ($(".Header").is(".menu-show")) {
+    $(".Header").removeClass("menu-show")
+  } else {
+    $(".Header").addClass("menu-show")
+  }
 })
+
+$(document).ready(function(){
+   $(".read").click(function(){
+      $(this).prev().toggle();
+      $(this).siblings('.dots').toggle();
+      if($(this).text()=='Devamını oku'){
+	$(this).text('Daralt');
+      }
+      else{
+	$(this).text('Devamını oku');
+      }
+   });
+});

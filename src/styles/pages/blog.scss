@@ -6,6 +6,25 @@
     flex-direction: column;
     margin-bottom: $gutter;
 
+    .more {
+        display: none;
+    }
+
+    .read {
+        font-size: $font-size-medium;
+        background-color: transparent;
+        color: $color-blue;
+        outline: none;
+        &:hover {
+            color: $color-light-blue;
+        }
+    }
+
+    h2 {
+        padding-bottom: 20px;
+        color: black;
+    }
+
     &-1 {
         display: flex;
         width: 60%;
@@ -16,6 +35,7 @@
         padding-right: 40px;
         padding-left: 40px;
         padding-bottom: 40px;
+
     }
     &-2 {
         display: flex;

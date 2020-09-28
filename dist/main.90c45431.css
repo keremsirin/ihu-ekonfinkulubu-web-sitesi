@@ -1217,6 +1217,18 @@ h4 {
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px; }
+  .blog .more {
+    display: none; }
+  .blog .read {
+    font-size: 15px;
+    background-color: transparent;
+    color: #2f5369;
+    outline: none; }
+    .blog .read:hover {
+      color: #6bb8ca; }
+  .blog h2 {
+    padding-bottom: 20px;
+    color: black; }
   .blog-1 {
     display: flex;
     width: 60%;
