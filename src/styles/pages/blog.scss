@@ -6,8 +6,20 @@
     flex-direction: column;
     margin-bottom: $gutter;
 
+    @include mq("tablet") {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: $gutter;
+    }
+
     .more {
         display: none;
+        @include mq("tablet") {
+            display: none;
+        }
     }
 
     .read {
@@ -17,105 +29,62 @@
         outline: none;
         margin-left: 6px;
         font-weight: bold;
+        @include mq("tablet") {
+            font-size: $font-size-medium;
+            background-color: transparent;
+            color: $color-blue;
+            outline: none;
+            margin-left: 6px;
+            font-weight: bold;
+        }
         &:hover {
             color: $color-light-blue;
+            @include mq("tablet") {
+                color: $color-light-blue;
+            }
         }
     }
 
     .blog_post {
-        text-align: justify;
+        font-size: $font-size-medium;
+        @include mq("tablet") {
+            text-align: justify;
+        }
     }
 
     h2 {
         padding-bottom: 20px;
         color: $color-blue;
-    }
-
-    &-1 {
-        display: flex;
-        width: 60%;
-        height: auto;
-        background-color: #fcfcfc;
-        margin-top: $gutter;
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-bottom: 40px;
-        flex-direction: column;
-        border: 1px solid #ddd;
-
-
-        &-profile {
-            display: flex;
-            flex-direction: row;
-            font-size: $font-size-medium;
-            justify-content: space-between;
-            padding-bottom: 10px;
-            color: $color-light-blue;
-            font-weight: bold;
-        }
-
-    }
-    &-2 {
-        display: flex;
-        width: 60%;
-        height: auto;
-        background-color: #fcfcfc;
-        margin-top: $gutter;
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-bottom: 40px;
-        flex-direction: column;
-        border: 1px solid #ddd;
-
-
-        &-profile {
-            display: flex;
-            flex-direction: row;
-            font-size: $font-size-medium;
-            justify-content: space-between;
-            padding-bottom: 10px;
-            color: $color-light-blue;
-            font-weight: bold;
+        @include mq("tablet") {
+            padding-bottom: 20px;
+            color: $color-blue;
         }
     }
-    &-3 {
+
+    &-1, &-2, &-3, &-4 {
         display: flex;
-        width: 60%;
+        width: 100%;
         height: auto;
         background-color: #fcfcfc;
         margin-top: $gutter;
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-bottom: 40px;
+        padding: 20px;
         flex-direction: column;
         border: 1px solid #ddd;
 
-
-        &-profile {
+        @include mq("tablet") {
             display: flex;
-            flex-direction: row;
-            font-size: $font-size-medium;
-            justify-content: space-between;
-            padding-bottom: 10px;
-            color: $color-light-blue;
-            font-weight: bold;
+            width: 60%;
+            height: auto;
+            background-color: #fcfcfc;
+            margin-top: $gutter;
+            padding-top: 40px;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-bottom: 40px;
+            flex-direction: column;
+            border: 1px solid #ddd;
         }
-    }
-    &-4 {
-        display: flex;
-        width: 60%;
-        height: auto;
-        background-color: #fcfcfc;
-        margin-top: $gutter;
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-left: 40px;
-        padding-bottom: 40px;
-        flex-direction: column;
-        border: 1px solid #ddd;
+
 
         &-profile {
             display: flex;
@@ -125,6 +94,16 @@
             padding-bottom: 10px;
             color: $color-light-blue;
             font-weight: bold;
+
+            @include mq("tablet") {
+                display: flex;
+                flex-direction: row;
+                font-size: $font-size-medium;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                color: $color-light-blue;
+                font-weight: bold;
+            }
         }
     }
 }

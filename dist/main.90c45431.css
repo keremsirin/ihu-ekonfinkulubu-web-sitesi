@@ -1217,8 +1217,19 @@ h4 {
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .blog {
+      display: flex;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px; } }
   .blog .more {
     display: none; }
+    @media (min-width: 768px) {
+      .blog .more {
+        display: none; } }
   .blog .read {
     font-size: 15px;
     background-color: transparent;
@@ -1226,26 +1237,54 @@ h4 {
     outline: none;
     margin-left: 6px;
     font-weight: bold; }
+    @media (min-width: 768px) {
+      .blog .read {
+        font-size: 15px;
+        background-color: transparent;
+        color: #2f5369;
+        outline: none;
+        margin-left: 6px;
+        font-weight: bold; } }
     .blog .read:hover {
       color: #6bb8ca; }
+      @media (min-width: 768px) {
+        .blog .read:hover {
+          color: #6bb8ca; } }
   .blog .blog_post {
-    text-align: justify; }
+    font-size: 15px; }
+    @media (min-width: 768px) {
+      .blog .blog_post {
+        text-align: justify; } }
   .blog h2 {
     padding-bottom: 20px;
     color: #2f5369; }
-  .blog-1 {
+    @media (min-width: 768px) {
+      .blog h2 {
+        padding-bottom: 20px;
+        color: #2f5369; } }
+  .blog-1, .blog-2, .blog-3, .blog-4 {
     display: flex;
-    width: 60%;
+    width: 100%;
     height: auto;
     background-color: #fcfcfc;
     margin-top: 20px;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 40px;
+    padding: 20px;
     flex-direction: column;
     border: 1px solid #ddd; }
-    .blog-1-profile {
+    @media (min-width: 768px) {
+      .blog-1, .blog-2, .blog-3, .blog-4 {
+        display: flex;
+        width: 60%;
+        height: auto;
+        background-color: #fcfcfc;
+        margin-top: 20px;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+        flex-direction: column;
+        border: 1px solid #ddd; } }
+    .blog-1-profile, .blog-2-profile, .blog-3-profile, .blog-4-profile {
       display: flex;
       flex-direction: row;
       font-size: 15px;
@@ -1253,66 +1292,15 @@ h4 {
       padding-bottom: 10px;
       color: #6bb8ca;
       font-weight: bold; }
-  .blog-2 {
-    display: flex;
-    width: 60%;
-    height: auto;
-    background-color: #fcfcfc;
-    margin-top: 20px;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    flex-direction: column;
-    border: 1px solid #ddd; }
-    .blog-2-profile {
-      display: flex;
-      flex-direction: row;
-      font-size: 15px;
-      justify-content: space-between;
-      padding-bottom: 10px;
-      color: #6bb8ca;
-      font-weight: bold; }
-  .blog-3 {
-    display: flex;
-    width: 60%;
-    height: auto;
-    background-color: #fcfcfc;
-    margin-top: 20px;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    flex-direction: column;
-    border: 1px solid #ddd; }
-    .blog-3-profile {
-      display: flex;
-      flex-direction: row;
-      font-size: 15px;
-      justify-content: space-between;
-      padding-bottom: 10px;
-      color: #6bb8ca;
-      font-weight: bold; }
-  .blog-4 {
-    display: flex;
-    width: 60%;
-    height: auto;
-    background-color: #fcfcfc;
-    margin-top: 20px;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 40px;
-    flex-direction: column;
-    border: 1px solid #ddd; }
-    .blog-4-profile {
-      display: flex;
-      flex-direction: row;
-      font-size: 15px;
-      justify-content: space-between;
-      padding-bottom: 10px;
-      color: #6bb8ca;
-      font-weight: bold; }
+      @media (min-width: 768px) {
+        .blog-1-profile, .blog-2-profile, .blog-3-profile, .blog-4-profile {
+          display: flex;
+          flex-direction: row;
+          font-size: 15px;
+          justify-content: space-between;
+          padding-bottom: 10px;
+          color: #6bb8ca;
+          font-weight: bold; } }
 
 .etkinlikler {
   display: flex;
