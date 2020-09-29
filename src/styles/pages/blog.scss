@@ -15,6 +15,13 @@
         margin-bottom: $gutter;
     }
 
+    .dots {
+        margin-right: 4px;
+        @include mq("tablet") {
+            margin-right: 6px;
+        }
+    }
+
     .more {
         display: none;
         @include mq("tablet") {
@@ -27,14 +34,14 @@
         background-color: transparent;
         color: $color-blue;
         outline: none;
-        margin-left: 6px;
+        //margin-left: 6px;
         font-weight: bold;
         @include mq("tablet") {
             font-size: $font-size-medium;
             background-color: transparent;
             color: $color-blue;
             outline: none;
-            margin-left: 6px;
+            //margin-left: 6px;
             font-weight: bold;
         }
         &:hover {

@@ -6,15 +6,17 @@ $(".Header-switch").on("click", function () {
   }
 })
 
-$(document).ready(function(){
-   $(".read").click(function(){
-      $(this).prev().toggle();
-      $(this).siblings('.dots').toggle();
-      if($(this).text()=='Devamını oku'){
-	$(this).text('Daralt');
-      }
-      else{
-	$(this).text('Devamını oku');
-      }
-   });
-});
+$(document).ready(function () {
+  $(".read").click(function () {
+    $(this).prev().toggle()
+    $(this).siblings(".dots").toggle()
+    if ($(this).text() == "Devamını oku") {
+      $(this).text("Daralt")
+      $(this).css({
+        marginLeft: "6px",
+      })
+    } else {
+      $(this).text("Devamını oku")
+    }
+  })
+})
