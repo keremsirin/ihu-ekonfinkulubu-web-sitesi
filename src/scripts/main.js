@@ -17,6 +17,9 @@ $(document).ready(function () {
       })
     } else {
       $(this).text("Devamını oku")
+      $(this).css({
+        marginLeft: "0px",
+      })
     }
   })
 })
