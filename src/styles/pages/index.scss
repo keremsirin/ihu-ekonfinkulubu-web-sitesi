@@ -45,6 +45,14 @@
         }
     }
 
+    &-forex {
+        display: none;
+    }
+
+    &-symbol {
+        padding-top: 50px;
+    }
+
     &-news {
         display: flex;
         width: 100%;
