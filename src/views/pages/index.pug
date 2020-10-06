@@ -7,6 +7,14 @@ block content
                 h2 Ekonomi  ve Finans Kulübü
             img(src="../.././img/homepage.jpeg", alt="")
 
+        .homepage-ticker
+            // TradingView Widget BEGIN
+            .tradingview-widget-container
+                .tradingview-widget-container__widget
+                script(type='text/javascript' src='https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js' async='')
+                    
+
+
         .homepage-forex
             // TradingView Widget BEGIN
             .tradingview-widget-container
@@ -99,10 +107,7 @@ block content
                         "container_id": "tradingview_27903"
                         }
                         );
-                    // TradingView Widget END
-
-
-
+                   
 
         .homepage-news
             div(style='font: normal 11px Arial; width: 698px; border: solid 1px #ccc; background: #fff; border-radius: 3px; box-shadow: 1px 1px 3px #ccc;')

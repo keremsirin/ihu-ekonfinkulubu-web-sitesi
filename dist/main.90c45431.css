@@ -784,6 +784,8 @@ h4 {
       filter: brightness(50%);
       transform: translateY(-300px);
       z-index: -2; }
+  .homepage-ticker {
+    padding-top: 50px; }
   .homepage-forex {
     display: none; }
   .homepage-symbol {
