@@ -84,23 +84,37 @@ block content
                         "container_id": "tradingview_27903"
                         }
                         );
-                   
-        .homepage-forex
-            // TradingView Widget BEGIN
-            .tradingview-widget-container
-            .tradingview-widget-container__widget
-            script(type='text/javascript' src='https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js' async='')
 
-        .homepage-news
-            div(style='font: normal 11px Arial; width: 698px; border: solid 1px #ccc; background: #fff; border-radius: 3px; box-shadow: 1px 1px 3px #ccc;')
-                h2(style='padding: 8px; margin: 0; height: 40px; border: 0; border-bottom: solid 1px #ccc;')
-                    a(href='https://www.trthaber.com/')
-                    img(src='https://www.trthaber.com/static/images/siteneEkle/logo_a_v3.png' alt='TRT Haber Haberler' style='border: none 0;')
-                iframe(frameborder='0' width='698' height='402' src='https://www.trthaber.com/sitene-ekle/ekonomi-7/?haberSay=15&renk=a&resimler=1')
-                div(style='text-align: center;line-height: 23px;border-top: solid 1px #ccc; color: #666; margin-top: 5px;box-shadow: 0 -1px 3px #ccc;')
-                    a(style='text-decoration: none;color: #666; font: normal 11px Arial;' href='https://www.trthaber.com/') Güncel Haberler
-                    |   
-                    a(style='text-decoration: none;color: #666; font: normal 11px Arial;' href='https://www.trthaber.com/haber/ekonomi/') Ekonomi Haberleri
+        .homepage-fc           
+            .homepage-fc-forex
+                // TradingView Widget BEGIN
+                .tradingview-widget-container
+                .tradingview-widget-container__widget
+                script(type='text/javascript' src='https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js' async='')
+                
+
+
+            .homepage-fc-chart
+                
+                .tradingview-widget-container
+                    .tradingview-widget-container__widget
+                    .tradingview-widget-copyright
+                    a(href='https://tr.tradingview.com/symbols/USDTRY/?exchange=FX' rel='noopener' target='_blank')
+                    script(type='text/javascript' src='https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js' async='')
+                
+
+
+
+        //- .homepage-news
+        //-     div(style='font: normal 11px Arial; width: 698px; border: solid 1px #ccc; background: #fff; border-radius: 3px; box-shadow: 1px 1px 3px #ccc;')
+        //-         h2(style='padding: 8px; margin: 0; height: 40px; border: 0; border-bottom: solid 1px #ccc;')
+        //-             a(href='https://www.trthaber.com/')
+        //-             img(src='https://www.trthaber.com/static/images/siteneEkle/logo_a_v3.png' alt='TRT Haber Haberler' style='border: none 0;')
+        //-         iframe(frameborder='0' width='698' height='402' src='https://www.trthaber.com/sitene-ekle/ekonomi-7/?haberSay=15&renk=a&resimler=1')
+        //-         div(style='text-align: center;line-height: 23px;border-top: solid 1px #ccc; color: #666; margin-top: 5px;box-shadow: 0 -1px 3px #ccc;')
+        //-             a(style='text-decoration: none;color: #666; font: normal 11px Arial;' href='https://www.trthaber.com/') Güncel Haberler
+        //-             |   
+        //-             a(style='text-decoration: none;color: #666; font: normal 11px Arial;' href='https://www.trthaber.com/haber/ekonomi/') Ekonomi Haberleri
 
 
     p &nbsp;

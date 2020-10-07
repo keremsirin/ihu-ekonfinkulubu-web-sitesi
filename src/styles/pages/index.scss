@@ -50,14 +50,20 @@
 
     }
 
-    &-forex {
+    &-fc {
+        display: flex;
+        flex-direction: row;
         padding-top: 50px;
+        &-forex {
+            display: flex;
+        }
+    
+        &-symbol {
+            display: flex;
+        }
+    
     }
-
-    &-symbol {
-        padding-top: 50px;
-    }
-
+    
     &-news {
         display: flex;
         width: 100%;

@@ -786,10 +786,14 @@ h4 {
       z-index: -2; }
   .homepage-ticker {
     padding-top: 50px; }
-  .homepage-forex {
+  .homepage-fc {
+    display: flex;
+    flex-direction: row;
     padding-top: 50px; }
-  .homepage-symbol {
-    padding-top: 50px; }
+    .homepage-fc-forex {
+      display: flex; }
+    .homepage-fc-symbol {
+      display: flex; }
   .homepage-news {
     display: flex;
     width: 100%;
