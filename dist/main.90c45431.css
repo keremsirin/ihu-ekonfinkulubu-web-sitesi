@@ -788,12 +788,32 @@ h4 {
     padding-top: 50px; }
   .homepage-fc {
     display: flex;
+    width: 100%;
+    height: auto;
     flex-direction: row;
     padding-top: 50px; }
     .homepage-fc-forex {
-      display: flex; }
-    .homepage-fc-symbol {
-      display: flex; }
+      display: flex;
+      width: 68%;
+      height: 400px;
+      background-color: red; }
+    .homepage-fc-charts {
+      display: flex;
+      width: 30%;
+      height: 400px;
+      margin-left: 2%;
+      flex-direction: column;
+      justify-content: space-between; }
+      .homepage-fc-charts-1 {
+        display: flex;
+        width: 100%;
+        height: 188px;
+        background-color: pink; }
+      .homepage-fc-charts-2 {
+        display: flex;
+        width: 100%;
+        height: 188px;
+        background-color: yellow; }
   .homepage-news {
     display: flex;
     width: 100%;
