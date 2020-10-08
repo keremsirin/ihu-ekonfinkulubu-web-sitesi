@@ -794,14 +794,13 @@ h4 {
     padding-top: 50px; }
     .homepage-fc-forex {
       display: flex;
-      width: 68%;
+      width: 70%;
       height: 400px;
       background-color: red; }
     .homepage-fc-charts {
       display: flex;
       width: 30%;
       height: 400px;
-      margin-left: 2%;
       flex-direction: column;
       justify-content: space-between; }
       .homepage-fc-charts-1 {
