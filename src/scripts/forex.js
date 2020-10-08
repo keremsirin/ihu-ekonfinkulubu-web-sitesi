@@ -531,3 +531,7 @@
 //   "colorTheme": "light",
 //   "locale": "tr"
 // }
+
+// const Routes = function(props) {
+//   {"width": "770","height": "400","currencies": ["EUR","USD","JPY","GBP","CHF","AUD","CAD","CNY","TRY"],"isTransparent": false,"colorTheme": "light","locale": "tr"}
+// }
