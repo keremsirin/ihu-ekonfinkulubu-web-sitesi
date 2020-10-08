@@ -12,10 +12,7 @@ block content
             .tradingview-widget-container
                 .tradingview-widget-container__widget
                 script(type='text/javascript' src='https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js' async='')
-                    
-
-
-            
+                        
                 
         .homepage-symbol
             .tradingview-widget-container
@@ -62,13 +59,37 @@ block content
                         "SZSE:000793|12M"
                         ],
                         [
+                        "ASELSAN",
+                        "BIST:ASELS|12M"
+                        ],
+                        [
+                        "Turkcell",
+                        "BIST:TCELL|12M"
+                        ],
+                        [
+                        "Koç",
+                        "BIST:KCHOL|12M"
+                        ],
+                        [
+                        "Sabancı",
+                        "BIST:SAHOL|12M"
+                        ],
+                        [
                         "THY",
                         "BIST:THYAO|12M"
                         ],
                         [
+                        "BİM",
+                        "BIST:BIMAS|12M"
+                        ],
+                        [
+                        "Arçelik",
+                        "BIST:ARCLK|12M"
+                        ],
+                        [
                         "VESTEL",
                         "BIST:VESTL|12M"
-                        ]
+                        ],
                         ],
                         "chartOnly": false,
                         "width": "100%",
@@ -90,17 +111,20 @@ block content
                 .tradingview-widget-container
                 .tradingview-widget-container__widget
                 script(type='text/javascript' src='https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js' async='')
-                //- script(type='text/javascript' src="../.././scripts/forex.js")
-                    
-                    //- |   {"width": "770","height": "400","currencies": ["EUR","USD","JPY","GBP","CHF","AUD","CAD","CNY","TRY"],"isTransparent": false,"colorTheme": "light","locale": "tr"}
 
 
             .homepage-fc-charts
                 
                 .homepage-fc-charts-1
+                    .tradingview-widget-container
+                        .tradingview-widget-container__widget
+                        script(type='text/javascript' src='https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js' async='')
+                            
                 
                 .homepage-fc-charts-2
-
+                    .tradingview-widget-container
+                        .tradingview-widget-container__widget
+                        script(type='text/javascript' src='https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js' async='')
 
                 
                 //- .tradingview-widget-container

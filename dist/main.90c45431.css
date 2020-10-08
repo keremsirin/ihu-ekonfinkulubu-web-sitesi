@@ -794,25 +794,23 @@ h4 {
     padding-top: 50px; }
     .homepage-fc-forex {
       display: flex;
-      width: 70%;
-      height: 400px;
-      background-color: red; }
+      width: 69%;
+      height: 400px; }
     .homepage-fc-charts {
       display: flex;
-      width: 30%;
+      width: 29%;
+      margin-left: 2%;
       height: 400px;
       flex-direction: column;
       justify-content: space-between; }
       .homepage-fc-charts-1 {
         display: flex;
         width: 100%;
-        height: 188px;
-        background-color: pink; }
+        height: 188px; }
       .homepage-fc-charts-2 {
         display: flex;
         width: 100%;
-        height: 188px;
-        background-color: yellow; }
+        height: 188px; }
   .homepage-news {
     display: flex;
     width: 100%;
