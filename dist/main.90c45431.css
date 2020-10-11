@@ -1302,7 +1302,11 @@ h4 {
     display: none; }
     @media (min-width: 768px) {
       .blog .more {
-        display: none; } }
+        display: none; }
+        .blog .more a {
+          color: #6bb8ca; }
+          .blog .more a:hover {
+            color: #2f5369; } }
   .blog .read {
     font-size: 15px;
     background-color: transparent;

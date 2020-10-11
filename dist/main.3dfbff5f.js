@@ -133,12 +133,14 @@ $(document).ready(function () {
     if ($(this).text() == "Devamını oku") {
       $(this).text("Daralt");
       $(this).css({
-        marginLeft: "6px"
+        marginLeft: "6px",
+        float: "right"
       });
     } else {
       $(this).text("Devamını oku");
       $(this).css({
-        marginLeft: "0px"
+        marginLeft: "0px",
+        float: "none"
       });
     }
   });
@@ -171,7 +173,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54634" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58229" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

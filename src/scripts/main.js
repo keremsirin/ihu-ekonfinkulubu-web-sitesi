@@ -14,11 +14,13 @@ $(document).ready(function () {
       $(this).text("Daralt")
       $(this).css({
         marginLeft: "6px",
+        float: "right",
       })
     } else {
       $(this).text("Devamını oku")
       $(this).css({
         marginLeft: "0px",
+        float: "none",
       })
     }
   })
