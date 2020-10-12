@@ -755,28 +755,79 @@ h4 {
   width: 100%;
   height: auto;
   flex-direction: column; }
+  @media (min-width: 768px) {
+    .homepage {
+      display: flex;
+      width: 100%;
+      height: auto;
+      flex-direction: column; } }
   .homepage-img {
     width: 100%;
     height: 550px; }
+    .homepage-img .homepage_img {
+      display: none; }
+    @media (min-width: 768px) {
+      .homepage-img {
+        width: 100%;
+        height: 550px; }
+        .homepage-img .homepage_img {
+          display: flex; }
+        .homepage-img .homepage_mobile {
+          display: none; } }
     .homepage-img-text {
       display: flex;
       width: 100%;
       height: 300px;
       z-index: 2;
       background-color: transparent;
-      flex-direction: column; }
-      .homepage-img-text h2 {
+      flex-direction: column;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .homepage-img-text {
+          display: flex;
+          width: 100%;
+          height: 300px;
+          z-index: 2;
+          background-color: transparent;
+          flex-direction: column;
+          text-align: center; } }
+      .homepage-img-text h4 {
         display: flex;
         width: 100%;
-        font-size: 50px;
+        font-size: 25px;
+        padding-top: 60px;
+        justify-content: center; }
+        @media (min-width: 768px) {
+          .homepage-img-text h4 {
+            display: none; } }
+      .homepage-img-text h5 {
+        display: flex;
+        width: 100%;
+        font-size: 40px;
+        color: white;
         justify-content: center;
         padding-top: 20px; }
+        @media (min-width: 768px) {
+          .homepage-img-text h5 {
+            display: none; } }
+      .homepage-img-text h2 {
+        display: none; }
+        @media (min-width: 768px) {
+          .homepage-img-text h2 {
+            display: flex;
+            width: 100%;
+            font-size: 50px;
+            justify-content: center;
+            padding-top: 20px; } }
       .homepage-img-text h1 {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        padding-top: 90px;
-        color: white; }
+        display: none; }
+        @media (min-width: 768px) {
+          .homepage-img-text h1 {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding-top: 90px;
+            color: white; } }
     .homepage-img img {
       position: relative;
       width: 100%;
@@ -784,39 +835,91 @@ h4 {
       filter: brightness(50%);
       transform: translateY(-300px);
       z-index: -2; }
+      @media (min-width: 768px) {
+        .homepage-img img {
+          position: relative;
+          width: 100%;
+          height: 550px;
+          filter: brightness(50%);
+          transform: translateY(-300px);
+          z-index: -2; } }
   .homepage-ticker {
-    padding-top: 50px; }
+    padding-top: 20px; }
+    @media (min-width: 768px) {
+      .homepage-ticker {
+        padding-top: 50px; } }
   .homepage-fc {
     display: flex;
     width: 100%;
     height: auto;
-    flex-direction: row;
-    padding-top: 50px; }
+    flex-direction: column;
+    padding-top: 20px; }
+    @media (min-width: 768px) {
+      .homepage-fc {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding-top: 50px; } }
     .homepage-fc-forex {
       display: flex;
-      width: 69%;
+      width: 100%;
       height: 400px; }
+      @media (min-width: 768px) {
+        .homepage-fc-forex {
+          display: flex;
+          width: 69%;
+          height: 400px; } }
     .homepage-fc-charts {
       display: flex;
-      width: 29%;
-      margin-left: 2%;
+      width: 100%;
+      margin-left: 0;
       height: 400px;
       flex-direction: column;
       justify-content: space-between; }
+      @media (min-width: 768px) {
+        .homepage-fc-charts {
+          display: flex;
+          width: 29%;
+          margin-left: 2%;
+          height: 400px;
+          flex-direction: column;
+          justify-content: space-between; } }
       .homepage-fc-charts-1 {
         display: flex;
         width: 100%;
-        height: 188px; }
+        height: 188px;
+        margin-top: 20px; }
+        @media (min-width: 768px) {
+          .homepage-fc-charts-1 {
+            display: flex;
+            width: 100%;
+            height: 188px;
+            margin-top: 0; } }
       .homepage-fc-charts-2 {
         display: flex;
         width: 100%;
-        height: 188px; }
+        height: 188px;
+        margin-top: 20px; }
+        @media (min-width: 768px) {
+          .homepage-fc-charts-2 {
+            display: flex;
+            width: 100%;
+            height: 188px;
+            margin-top: 0px; } }
   .homepage-news {
     display: flex;
     width: 100%;
     height: auto;
     justify-content: center;
     padding-top: 50px; }
+    @media (min-width: 768px) {
+      .homepage-news {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding-top: 50px; } }
 
 .hakkimizda {
   display: flex;
