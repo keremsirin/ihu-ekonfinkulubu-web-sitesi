@@ -29,7 +29,6 @@ $(document).ready(function () {
 $('.homepage-slider').flickity({
   cellAlign: 'left',
   contain: true,
-  wrapAround: true,
-  prevNextButtons: false
+  wrapAround: true
 });
 

@@ -1094,6 +1094,19 @@ https://flickity.metafizzy.co
             color: white;
             font-weight: bold; }
 
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px; }
+
+.flickity-button {
+  background: transparent; }
+  .flickity-button:hover {
+    background: #6bb8ca;
+    transition: 0.2s; }
+  .flickity-button-icon {
+    fill: #2f5369; }
+
 .hakkimizda {
   display: flex;
   width: 100%;
