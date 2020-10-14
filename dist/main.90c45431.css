@@ -1085,7 +1085,8 @@ https://flickity.metafizzy.co
           margin-right: auto;
           margin-top: auto;
           text-align: center;
-          background-color: #2f5369; }
+          background-color: #2f5369;
+          border-radius: 5px; }
           .homepage .slider-1-blog_flc-bot-button:hover, .homepage .slider-2-blog_flc-bot-button:hover, .homepage .slider-3-blog_flc-bot-button:hover, .homepage .slider-4-blog_flc-bot-button:hover {
             background-color: #6bb8ca;
             transition: 0.2s; }
