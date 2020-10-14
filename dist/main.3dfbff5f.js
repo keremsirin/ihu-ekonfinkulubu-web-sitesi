@@ -145,6 +145,26 @@ $(document).ready(function () {
     }
   });
 });
+$(document).ready(function () {
+  $(".read_en").click(function () {
+    $(this).prev().toggle();
+    $(this).siblings(".dots_en").toggle();
+
+    if ($(this).text() == "Read more") {
+      $(this).text("Read less");
+      $(this).css({
+        marginLeft: "6px",
+        float: "right"
+      });
+    } else {
+      $(this).text("Read more");
+      $(this).css({
+        marginLeft: "0px",
+        float: "none"
+      });
+    }
+  });
+});
 $('.homepage-slider').flickity({
   cellAlign: 'left',
   contain: true,
@@ -178,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52540" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57633" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

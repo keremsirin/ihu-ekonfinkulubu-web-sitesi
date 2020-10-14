@@ -559,6 +559,16 @@ https://flickity.metafizzy.co
           width: 180px; } }
       .Header-logo-metin img {
         width: 100%; }
+      .Header-logo-metin_en {
+        width: 150px;
+        margin-left: -45px;
+        margin-top: 5px; }
+        @media (min-width: 768px) {
+          .Header-logo-metin_en {
+            width: 180px;
+            margin-left: -55px; } }
+        .Header-logo-metin_en img {
+          width: 150%; }
   .Header-lang-mobile {
     display: flex;
     margin-left: auto; }
@@ -1690,6 +1700,11 @@ https://flickity.metafizzy.co
     @media (min-width: 768px) {
       .blog .dots {
         margin-right: 6px; } }
+  .blog .dots_en {
+    margin-right: 4px; }
+    @media (min-width: 768px) {
+      .blog .dots_en {
+        margin-right: 6px; } }
   .blog .more {
     display: none; }
     @media (min-width: 768px) {
@@ -1698,6 +1713,15 @@ https://flickity.metafizzy.co
         .blog .more a {
           color: #6bb8ca; }
           .blog .more a:hover {
+            color: #2f5369; } }
+  .blog .more_en {
+    display: none; }
+    @media (min-width: 768px) {
+      .blog .more_en {
+        display: none; }
+        .blog .more_en a {
+          color: #6bb8ca; }
+          .blog .more_en a:hover {
             color: #2f5369; } }
   .blog .read {
     font-size: 15px;
@@ -1716,6 +1740,24 @@ https://flickity.metafizzy.co
       color: #6bb8ca; }
       @media (min-width: 768px) {
         .blog .read:hover {
+          color: #6bb8ca; } }
+  .blog .read_en {
+    font-size: 15px;
+    background-color: transparent;
+    color: #2f5369;
+    outline: none;
+    font-weight: bold; }
+    @media (min-width: 768px) {
+      .blog .read_en {
+        font-size: 15px;
+        background-color: transparent;
+        color: #2f5369;
+        outline: none;
+        font-weight: bold; } }
+    .blog .read_en:hover {
+      color: #6bb8ca; }
+      @media (min-width: 768px) {
+        .blog .read_en:hover {
           color: #6bb8ca; } }
   .blog .blog_post {
     font-size: 15px; }

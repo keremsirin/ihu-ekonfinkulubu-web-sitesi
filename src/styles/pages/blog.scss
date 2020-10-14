@@ -21,6 +21,12 @@
             margin-right: 6px;
         }
     }
+    .dots_en {
+        margin-right: 4px;
+        @include mq("tablet") {
+            margin-right: 6px;
+        }
+    }
 
     .more {
         display: none;
@@ -34,8 +40,42 @@
             }
         }
     }
+    .more_en {
+        display: none;
+        @include mq("tablet") {
+            display: none;
+            a {
+                color: $color-light-blue;
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
 
     .read {
+        font-size: $font-size-medium;
+        background-color: transparent;
+        color: $color-blue;
+        outline: none;
+        //margin-left: 6px;
+        font-weight: bold;
+        @include mq("tablet") {
+            font-size: $font-size-medium;
+            background-color: transparent;
+            color: $color-blue;
+            outline: none;
+            //margin-left: 6px;
+            font-weight: bold;
+        }
+        &:hover {
+            color: $color-light-blue;
+            @include mq("tablet") {
+                color: $color-light-blue;
+            }
+        }
+    }
+    .read_en {
         font-size: $font-size-medium;
         background-color: transparent;
         color: $color-blue;

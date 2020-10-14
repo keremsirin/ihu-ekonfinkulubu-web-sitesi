@@ -36,7 +36,20 @@
       img {
         width: 100%;
       }
-    }
+      &_en {
+        width: 150px;
+        @include mq("tablet") {
+          width: 180px;
+          margin-left: -55px;
+
+        }
+        margin-left: -45px;
+        margin-top: 5px;
+        img {
+          width: 150%;
+        }
+      }
+    }  
   }
 
   &-lang-mobile {

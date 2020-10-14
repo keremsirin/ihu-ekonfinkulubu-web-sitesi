@@ -26,6 +26,26 @@ $(document).ready(function () {
   })
 })
 
+$(document).ready(function () {
+  $(".read_en").click(function () {
+    $(this).prev().toggle()
+    $(this).siblings(".dots_en").toggle()
+    if ($(this).text() == "Read more") {
+      $(this).text("Read less")
+      $(this).css({
+        marginLeft: "6px",
+        float: "right",
+      })
+    } else {
+      $(this).text("Read more")
+      $(this).css({
+        marginLeft: "0px",
+        float: "none",
+      })
+    }
+  })
+})
+
 $('.homepage-slider').flickity({
   cellAlign: 'left',
   contain: true,
