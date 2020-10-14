@@ -15,7 +15,16 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "node-sass": "^4.14.1"
+    "desandro-matches-selector": "^2.0.2",
+    "ev-emitter": "^1.1.1",
+    "fizzy-ui-utils": "^2.0.7",
+    "flickity": "^2.2.1",
+    "get-size": "^2.0.3",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "unidragger": "^2.3.1",
+    "unipointer": "^2.3.0",
+    "yarn": "^1.22.10"
   },
   "repository": "https://github.com/keremsirin/ihu-ekonfinkulubu-web-sitesi.git"
 }

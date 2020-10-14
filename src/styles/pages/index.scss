@@ -188,18 +188,92 @@
     
     }
     
-    &-news {
-        display: flex;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        padding-top: 50px;
-        @include mq("tablet") {
-            display: flex;
-            width: 100%;
-            height: auto;
-            justify-content: center;
-            padding-top: 50px;
+    &-slider {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slider {
+        &-1, &-2, &-3, &-4 {
+            margin-top: 50px;
+            width: 70%;
+            height: 400px;
+            margin-right: $gutter;
+            background-color: #fcfcfc;
+            border: 1px solid #ddd;
+            padding: 40px;
+
+            &-blog_flc {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+
+                &-top {
+                    display: inherit;
+                    width: 100%;
+                    height: 8%;
+                    // background-color: red;
+                    &-name {
+                        display: inherit;
+                        width: 65%;
+                        height: 100%;
+                        font-size: 15px;
+                        color: $color-light-blue;
+                        font-weight: bold;
+                        flex-direction: row;
+                    }
+                    &-date {
+                        display: inherit;
+                        width: 35%;
+                        height: 100%;
+                        font-size: 15px;
+                        color: $color-light-blue;
+                        font-weight: bold;
+                        justify-content: flex-end;
+                        flex-direction: row;
+                    }
+                }
+                
+                &-bot {
+                    display: inherit;
+                    width: 100%;
+                    height: 100%;
+                    //background-color: #ddd;
+                    text-align: justify;
+                    flex-direction: column;
+                    h2 {
+                        color: $color-blue;
+                    }
+                    &-title {
+                        margin-bottom: 20px;
+                    }
+                    &-button {
+                        display: flex;
+                        width: 150px;
+                        height: $finger-size;        
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: auto;
+                        text-align: center;
+                        background-color: $color-blue;
+                        &:hover {
+                            background-color: $color-light-blue;
+                            transition: 0.2s;
+                        }
+                        p {
+                            margin: auto;
+                            color: white;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+               
+            }
         }
     }
 }
+
+
