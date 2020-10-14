@@ -188,51 +188,97 @@
     
     }
     
+    
     &-slider {
         display: block;
-        width: 70%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        @include mq("tablet") {
+            display: block;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     .slider {
         &-1, &-2, &-3, &-4 {
-            margin-top: 50px;
-            width: 70%;
+            margin-top: 20px;
+            width: 80%;
             height: 400px;
             margin-right: $gutter;
             background-color: #fcfcfc;
             border: 1px solid #ddd;
-            padding: 40px;
+            padding: 20px;
+            @include mq("tablet") {
+                margin-top: 50px;
+                width: 70%;
+                height: 400px;
+                margin-right: $gutter;
+                background-color: #fcfcfc;
+                border: 1px solid #ddd;
+                padding: 40px;
+            }
 
             &-blog_flc {
                 display: flex;
                 width: 100%;
                 height: 100%;
                 flex-direction: column;
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                }
 
                 &-top {
                     display: inherit;
                     width: 100%;
                     height: 8%;
-                    // background-color: red;
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 100%;
+                        height: 8%;
+                    }
+
                     &-name {
                         display: inherit;
-                        width: 65%;
+                        width: 60%;
                         height: 100%;
                         font-size: 15px;
                         color: $color-light-blue;
                         font-weight: bold;
                         flex-direction: row;
+                        @include mq("tablet") {
+                            display: inherit;
+                            width: 65%;
+                            height: 100%;
+                            font-size: 15px;
+                            color: $color-light-blue;
+                            font-weight: bold;
+                            flex-direction: row;
+                        }
                     }
                     &-date {
                         display: inherit;
-                        width: 35%;
+                        width: 40%;
                         height: 100%;
                         font-size: 15px;
                         color: $color-light-blue;
                         font-weight: bold;
                         justify-content: flex-end;
                         flex-direction: row;
+                        @include mq("tablet") {
+                            display: inherit;
+                            width: 35%;
+                            height: 100%;
+                            font-size: 15px;
+                            color: $color-light-blue;
+                            font-weight: bold;
+                            justify-content: flex-end;
+                            flex-direction: row;
+                        }
                     }
                 }
                 
@@ -243,15 +289,55 @@
                     //background-color: #ddd;
                     text-align: justify;
                     flex-direction: column;
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 100%;
+                        height: 100%;
+                        //background-color: #ddd;
+                        text-align: justify;
+                        flex-direction: column;
+                    }
                     h2 {
                         color: $color-blue;
+                        display: none;
+                        @include mq("tablet") {
+                            display: flex;
+                        }
+                    }
+                    h3 {
+                        color: $color-blue;
+                        display: flex;
+                        font-size: 18px;
+                        @include mq("tablet") {
+                            display: none;
+                        }
                     }
                     &-title {
-                        margin-bottom: 20px;
+                        margin-bottom: 15px;
+                        @include mq("tablet") {
+                            margin-bottom: 20px;
+                        }
                     }
+                    &-text {
+                        display: none;
+                        @include mq("tablet") {
+                            font-size: $font-size;
+                            display: inline-block;
+                        }
+                    }
+                    &-text_mobile {
+                        font-size: $font-size-medium;
+                        display: inline-block;
+                        @include mq("tablet") {
+                            display: none;
+                        }
+                    }
+                    
                     &-button {
                         display: flex;
-                        width: 150px;
+                        width: auto;
+                        padding-left: 15px;
+                        padding-right: 15px;
                         height: $finger-size;        
                         margin-left: auto;
                         margin-right: auto;
@@ -259,6 +345,19 @@
                         text-align: center;
                         background-color: $color-blue;
                         border-radius: $border-radius;
+                        @include mq("tablet") {
+                            display: flex;
+                            width: auto;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            height: $finger-size;        
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: auto;
+                            text-align: center;
+                            background-color: $color-blue;
+                            border-radius: $border-radius;
+                        }
                         &:hover {
                             background-color: $color-light-blue;
                             transition: 0.2s;
@@ -267,6 +366,11 @@
                             margin: auto;
                             color: white;
                             font-weight: bold;
+                            @include mq("tablet") {
+                                margin: auto;
+                                color: white;
+                                font-weight: bold;
+                            }
                         }
                     }
                 }
@@ -279,9 +383,13 @@
 
 
 .flickity-prev-next-button {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
+    width: 0;
+    height: 0;
+    @include mq("tablet") {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
 }
 .flickity-button {
     background: transparent;

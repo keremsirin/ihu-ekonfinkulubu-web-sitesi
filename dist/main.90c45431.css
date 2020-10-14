@@ -1030,56 +1030,136 @@ https://flickity.metafizzy.co
             margin-top: 0px; } }
   .homepage-slider {
     display: block;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto; }
+    @media (min-width: 768px) {
+      .homepage-slider {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto; } }
   .homepage .slider-1, .homepage .slider-2, .homepage .slider-3, .homepage .slider-4 {
-    margin-top: 50px;
-    width: 70%;
+    margin-top: 20px;
+    width: 80%;
     height: 400px;
     margin-right: 20px;
     background-color: #fcfcfc;
     border: 1px solid #ddd;
-    padding: 40px; }
+    padding: 20px; }
+    @media (min-width: 768px) {
+      .homepage .slider-1, .homepage .slider-2, .homepage .slider-3, .homepage .slider-4 {
+        margin-top: 50px;
+        width: 70%;
+        height: 400px;
+        margin-right: 20px;
+        background-color: #fcfcfc;
+        border: 1px solid #ddd;
+        padding: 40px; } }
     .homepage .slider-1-blog_flc, .homepage .slider-2-blog_flc, .homepage .slider-3-blog_flc, .homepage .slider-4-blog_flc {
       display: flex;
       width: 100%;
       height: 100%;
       flex-direction: column; }
+      @media (min-width: 768px) {
+        .homepage .slider-1-blog_flc, .homepage .slider-2-blog_flc, .homepage .slider-3-blog_flc, .homepage .slider-4-blog_flc {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-direction: column; } }
       .homepage .slider-1-blog_flc-top, .homepage .slider-2-blog_flc-top, .homepage .slider-3-blog_flc-top, .homepage .slider-4-blog_flc-top {
         display: inherit;
         width: 100%;
         height: 8%; }
+        @media (min-width: 768px) {
+          .homepage .slider-1-blog_flc-top, .homepage .slider-2-blog_flc-top, .homepage .slider-3-blog_flc-top, .homepage .slider-4-blog_flc-top {
+            display: inherit;
+            width: 100%;
+            height: 8%; } }
         .homepage .slider-1-blog_flc-top-name, .homepage .slider-2-blog_flc-top-name, .homepage .slider-3-blog_flc-top-name, .homepage .slider-4-blog_flc-top-name {
           display: inherit;
-          width: 65%;
+          width: 60%;
           height: 100%;
           font-size: 15px;
           color: #6bb8ca;
           font-weight: bold;
           flex-direction: row; }
+          @media (min-width: 768px) {
+            .homepage .slider-1-blog_flc-top-name, .homepage .slider-2-blog_flc-top-name, .homepage .slider-3-blog_flc-top-name, .homepage .slider-4-blog_flc-top-name {
+              display: inherit;
+              width: 65%;
+              height: 100%;
+              font-size: 15px;
+              color: #6bb8ca;
+              font-weight: bold;
+              flex-direction: row; } }
         .homepage .slider-1-blog_flc-top-date, .homepage .slider-2-blog_flc-top-date, .homepage .slider-3-blog_flc-top-date, .homepage .slider-4-blog_flc-top-date {
           display: inherit;
-          width: 35%;
+          width: 40%;
           height: 100%;
           font-size: 15px;
           color: #6bb8ca;
           font-weight: bold;
           justify-content: flex-end;
           flex-direction: row; }
+          @media (min-width: 768px) {
+            .homepage .slider-1-blog_flc-top-date, .homepage .slider-2-blog_flc-top-date, .homepage .slider-3-blog_flc-top-date, .homepage .slider-4-blog_flc-top-date {
+              display: inherit;
+              width: 35%;
+              height: 100%;
+              font-size: 15px;
+              color: #6bb8ca;
+              font-weight: bold;
+              justify-content: flex-end;
+              flex-direction: row; } }
       .homepage .slider-1-blog_flc-bot, .homepage .slider-2-blog_flc-bot, .homepage .slider-3-blog_flc-bot, .homepage .slider-4-blog_flc-bot {
         display: inherit;
         width: 100%;
         height: 100%;
         text-align: justify;
         flex-direction: column; }
+        @media (min-width: 768px) {
+          .homepage .slider-1-blog_flc-bot, .homepage .slider-2-blog_flc-bot, .homepage .slider-3-blog_flc-bot, .homepage .slider-4-blog_flc-bot {
+            display: inherit;
+            width: 100%;
+            height: 100%;
+            text-align: justify;
+            flex-direction: column; } }
         .homepage .slider-1-blog_flc-bot h2, .homepage .slider-2-blog_flc-bot h2, .homepage .slider-3-blog_flc-bot h2, .homepage .slider-4-blog_flc-bot h2 {
-          color: #2f5369; }
+          color: #2f5369;
+          display: none; }
+          @media (min-width: 768px) {
+            .homepage .slider-1-blog_flc-bot h2, .homepage .slider-2-blog_flc-bot h2, .homepage .slider-3-blog_flc-bot h2, .homepage .slider-4-blog_flc-bot h2 {
+              display: flex; } }
+        .homepage .slider-1-blog_flc-bot h3, .homepage .slider-2-blog_flc-bot h3, .homepage .slider-3-blog_flc-bot h3, .homepage .slider-4-blog_flc-bot h3 {
+          color: #2f5369;
+          display: flex;
+          font-size: 18px; }
+          @media (min-width: 768px) {
+            .homepage .slider-1-blog_flc-bot h3, .homepage .slider-2-blog_flc-bot h3, .homepage .slider-3-blog_flc-bot h3, .homepage .slider-4-blog_flc-bot h3 {
+              display: none; } }
         .homepage .slider-1-blog_flc-bot-title, .homepage .slider-2-blog_flc-bot-title, .homepage .slider-3-blog_flc-bot-title, .homepage .slider-4-blog_flc-bot-title {
-          margin-bottom: 20px; }
+          margin-bottom: 15px; }
+          @media (min-width: 768px) {
+            .homepage .slider-1-blog_flc-bot-title, .homepage .slider-2-blog_flc-bot-title, .homepage .slider-3-blog_flc-bot-title, .homepage .slider-4-blog_flc-bot-title {
+              margin-bottom: 20px; } }
+        .homepage .slider-1-blog_flc-bot-text, .homepage .slider-2-blog_flc-bot-text, .homepage .slider-3-blog_flc-bot-text, .homepage .slider-4-blog_flc-bot-text {
+          display: none; }
+          @media (min-width: 768px) {
+            .homepage .slider-1-blog_flc-bot-text, .homepage .slider-2-blog_flc-bot-text, .homepage .slider-3-blog_flc-bot-text, .homepage .slider-4-blog_flc-bot-text {
+              font-size: 16px;
+              display: inline-block; } }
+        .homepage .slider-1-blog_flc-bot-text_mobile, .homepage .slider-2-blog_flc-bot-text_mobile, .homepage .slider-3-blog_flc-bot-text_mobile, .homepage .slider-4-blog_flc-bot-text_mobile {
+          font-size: 15px;
+          display: inline-block; }
+          @media (min-width: 768px) {
+            .homepage .slider-1-blog_flc-bot-text_mobile, .homepage .slider-2-blog_flc-bot-text_mobile, .homepage .slider-3-blog_flc-bot-text_mobile, .homepage .slider-4-blog_flc-bot-text_mobile {
+              display: none; } }
         .homepage .slider-1-blog_flc-bot-button, .homepage .slider-2-blog_flc-bot-button, .homepage .slider-3-blog_flc-bot-button, .homepage .slider-4-blog_flc-bot-button {
           display: flex;
-          width: 150px;
+          width: auto;
+          padding-left: 15px;
+          padding-right: 15px;
           height: 44px;
           margin-left: auto;
           margin-right: auto;
@@ -1087,6 +1167,19 @@ https://flickity.metafizzy.co
           text-align: center;
           background-color: #2f5369;
           border-radius: 5px; }
+          @media (min-width: 768px) {
+            .homepage .slider-1-blog_flc-bot-button, .homepage .slider-2-blog_flc-bot-button, .homepage .slider-3-blog_flc-bot-button, .homepage .slider-4-blog_flc-bot-button {
+              display: flex;
+              width: auto;
+              padding-left: 15px;
+              padding-right: 15px;
+              height: 44px;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: auto;
+              text-align: center;
+              background-color: #2f5369;
+              border-radius: 5px; } }
           .homepage .slider-1-blog_flc-bot-button:hover, .homepage .slider-2-blog_flc-bot-button:hover, .homepage .slider-3-blog_flc-bot-button:hover, .homepage .slider-4-blog_flc-bot-button:hover {
             background-color: #6bb8ca;
             transition: 0.2s; }
@@ -1094,11 +1187,20 @@ https://flickity.metafizzy.co
             margin: auto;
             color: white;
             font-weight: bold; }
+            @media (min-width: 768px) {
+              .homepage .slider-1-blog_flc-bot-button p, .homepage .slider-2-blog_flc-bot-button p, .homepage .slider-3-blog_flc-bot-button p, .homepage .slider-4-blog_flc-bot-button p {
+                margin: auto;
+                color: white;
+                font-weight: bold; } }
 
 .flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px; }
+  width: 0;
+  height: 0; }
+  @media (min-width: 768px) {
+    .flickity-prev-next-button {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px; } }
 
 .flickity-button {
   background: transparent; }
