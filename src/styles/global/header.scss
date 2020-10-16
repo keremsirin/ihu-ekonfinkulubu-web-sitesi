@@ -29,22 +29,25 @@
     }
     &-metin {
       width: 150px;
-      @include mq("tablet") {
-        width: 180px;
-      }
-      margin-left: -10px;
-      img {
-        width: 100%;
-      }
+        @include mq("tablet") {
+          width: 180px;
+          margin-left: -60px;
+
+        }
+        margin-left: -50px;
+        margin-top: 10px;
+        img {
+          width: 150%;
+        }
       &_en {
         width: 150px;
         @include mq("tablet") {
           width: 180px;
-          margin-left: -55px;
+          margin-left: -60px;
 
         }
-        margin-left: -45px;
-        margin-top: 5px;
+        margin-left: -52px;
+        margin-top: 10px;
         img {
           width: 150%;
         }

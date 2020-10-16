@@ -553,20 +553,22 @@ https://flickity.metafizzy.co
         width: 80%; }
     .Header-logo-metin {
       width: 150px;
-      margin-left: -10px; }
+      margin-left: -50px;
+      margin-top: 10px; }
       @media (min-width: 768px) {
         .Header-logo-metin {
-          width: 180px; } }
+          width: 180px;
+          margin-left: -60px; } }
       .Header-logo-metin img {
-        width: 100%; }
+        width: 150%; }
       .Header-logo-metin_en {
         width: 150px;
-        margin-left: -45px;
-        margin-top: 5px; }
+        margin-left: -52px;
+        margin-top: 10px; }
         @media (min-width: 768px) {
           .Header-logo-metin_en {
             width: 180px;
-            margin-left: -55px; } }
+            margin-left: -60px; } }
         .Header-logo-metin_en img {
           width: 150%; }
   .Header-lang-mobile {
