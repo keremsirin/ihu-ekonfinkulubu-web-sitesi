@@ -1,16 +1,135 @@
 .etkinlikler {
     display: flex;
     width: 100%;
-    height: 400px;
+    height: auto;
     justify-content: center;
     // border-right: 1px solid #ddd;
     // border-left: 1px solid #ddd;
 
-
-    h2 {
+    // h2 {
+    //     display: flex;
+    //     align-items: center;
+    //     //padding-top: 100px;
+    //     color: $color-light-blue;
+    // }
+    @include mq("tablet") {
         display: flex;
-        align-items: center;
-        //padding-top: 100px;
-        color: $color-light-blue;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    &-boxes {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        @include mq("tablet") {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+        }
+
+        &-1, &-2 {
+            display: inherit;
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            margin-bottom: $gutter;
+            margin-top: $gutter;
+            &:last-child {
+                margin-top: 0;
+            }
+            @include mq("tablet") {
+                display: inherit;
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                margin-bottom: $gutter;
+                margin-top: $gutter;
+                &:last-child {
+                    margin-top: 0;
+                }
+            }
+
+            &-box1, &-box2  {
+                display: inherit;
+                width: 100%;
+                height: 450px;
+                flex-direction: column;
+                align-items: center;
+                &:first-child {
+                    margin-bottom: $gutter;
+                }
+                @include mq("tablet") {
+                    display: inherit;
+                    width: 100%;
+                    height: 450px;
+                    flex-direction: column;
+                    align-items: center;
+                    &:first-child {
+                        margin-bottom: 0;
+                    }
+                }
+                
+                &-img {
+                    display: inherit;
+                    width: 100%;
+                    height: 350px;
+                    border: 1px solid #ddd;
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 80%;
+                        height: 350px;
+                        border: 1px solid #ddd;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &-text {
+                    display: inherit;
+                    width: 100%;
+                    height: 100px;
+                    border-right: 1px solid #ddd;
+                    border-left: 1px solid #ddd;
+                    border-bottom: 1px solid #ddd;
+                    flex-direction: column;
+                    padding: 10px;
+                    h4 {
+                        color: $color-blue;
+                    }
+                    p {
+                        font-size: $font-size-medium;
+                        display: flex;
+                        align-self: flex-end;
+                        color: $color-blue;
+                        margin-top: auto;
+                    }
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 80%;
+                        height: 100px;
+                        border-right: 1px solid #ddd;
+                        border-left: 1px solid #ddd;
+                        border-bottom: 1px solid #ddd;
+                        flex-direction: column;
+                        padding: 20px;
+                        h4 {
+                            color: $color-blue;
+                        }
+                        p {
+                            font-size: $font-size-medium;
+                            display: flex;
+                            align-self: flex-end;
+                            color: $color-blue;
+                            margin-top: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
