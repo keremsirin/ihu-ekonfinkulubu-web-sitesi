@@ -16,15 +16,19 @@
         //display: flex;
         width: 100%;
         height: 550px;
+
         .homepage_img {
             display: none;
         }
+
         @include mq("tablet") {
             width: 100%;
             height: 550px;
+
             .homepage_img {
                 display: flex;
             }
+
             .homepage_mobile {
                 display: none;
             }
@@ -38,6 +42,7 @@
             background-color: transparent;
             flex-direction: column;
             text-align: center;
+
             @include mq("tablet") {
                 display: flex;
                 width: 100%;
@@ -47,7 +52,29 @@
                 flex-direction: column;
                 text-align: center;
             }
-        
+
+            .slogan_mobile {
+                display: flex;
+                width: 100%;                                   
+                padding-top: 40px;
+                justify-content: center;   
+                font-size: 24px;             
+                @include mq("tablet") {
+                    display: none;
+                }
+            }
+
+            .slogan {
+                display: none;
+                @include mq("tablet") {
+                    display: flex;
+                    width: 100%;
+                    padding-top: 25px;
+                    justify-content: center;
+                    font-size: 30px;
+                }
+            }
+
             h4 {
                 display: flex;
                 width: 100%;
@@ -55,7 +82,7 @@
                 padding-top: 60px;
                 justify-content: center;
                 @include mq("tablet") {
-                   display: none;
+                    display: none;
                 }
             }
 
@@ -66,13 +93,15 @@
                 color: white;
                 justify-content: center;
                 padding-top: 20px;
+
                 @include mq("tablet") {
-                   display: none;
+                    display: none;
                 }
             }
 
             h2 {
                 display: none;
+
                 @include mq("tablet") {
                     display: flex;
                     width: 100%;
@@ -81,8 +110,10 @@
                     padding-top: 20px;
                 }
             }
+
             h1 {
                 display: none;
+
                 @include mq("tablet") {
                     display: flex;
                     width: 100%;
@@ -101,6 +132,7 @@
             //margin-top: -100px;
             transform: translateY(-300px);
             z-index: -2;
+
             @include mq("tablet") {
                 position: relative;
                 width: 100%;
@@ -109,12 +141,13 @@
                 //margin-top: -100px;
                 transform: translateY(-300px);
                 z-index: -2;
-            }            
+            }
         }
     }
 
     &-ticker {
         padding-top: 20px;
+
         @include mq("tablet") {
             padding-top: 50px;
         }
@@ -126,6 +159,7 @@
         height: auto;
         flex-direction: column;
         padding-top: 20px;
+
         @include mq("tablet") {
             display: flex;
             width: 100%;
@@ -133,18 +167,20 @@
             flex-direction: row;
             padding-top: 50px;
         }
+
         &-forex {
             display: flex;
             width: 100%;
             height: 400px;
+
             @include mq("tablet") {
                 display: flex;
                 width: 69%;
                 height: 400px;
             }
         }
-        
-    
+
+
         &-charts {
             display: flex;
             width: 100%;
@@ -152,6 +188,7 @@
             height: 400px;
             flex-direction: column;
             justify-content: space-between;
+
             @include mq("tablet") {
                 display: flex;
                 width: 29%;
@@ -160,11 +197,13 @@
                 flex-direction: column;
                 justify-content: space-between;
             }
+
             &-1 {
                 display: flex;
                 width: 100%;
                 height: 188px;
                 margin-top: 20px;
+
                 @include mq("tablet") {
                     display: flex;
                     width: 100%;
@@ -172,11 +211,13 @@
                     margin-top: 0;
                 }
             }
+
             &-2 {
                 display: flex;
                 width: 100%;
                 height: 188px;
                 margin-top: 20px;
+
                 @include mq("tablet") {
                     display: flex;
                     width: 100%;
@@ -185,15 +226,16 @@
                 }
             }
         }
-    
+
     }
-    
-    
+
+
     &-slider {
         display: block;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+
         @include mq("tablet") {
             display: block;
             width: 70%;
@@ -201,8 +243,13 @@
             margin-right: auto;
         }
     }
+
     .slider {
-        &-1, &-2, &-3, &-4 {
+
+        &-1,
+        &-2,
+        &-3,
+        &-4 {
             margin-top: 20px;
             width: 80%;
             height: 400px;
@@ -210,6 +257,7 @@
             background-color: #fcfcfc;
             border: 1px solid #ddd;
             padding: 20px;
+
             @include mq("tablet") {
                 margin-top: 50px;
                 width: 70%;
@@ -225,6 +273,7 @@
                 width: 100%;
                 height: 100%;
                 flex-direction: column;
+
                 @include mq("tablet") {
                     display: flex;
                     width: 100%;
@@ -236,6 +285,7 @@
                     display: inherit;
                     width: 100%;
                     height: 8%;
+
                     @include mq("tablet") {
                         display: inherit;
                         width: 100%;
@@ -250,6 +300,7 @@
                         color: $color-light-blue;
                         font-weight: bold;
                         flex-direction: row;
+
                         @include mq("tablet") {
                             display: inherit;
                             width: 65%;
@@ -260,6 +311,7 @@
                             flex-direction: row;
                         }
                     }
+
                     &-date {
                         display: inherit;
                         width: 40%;
@@ -269,6 +321,7 @@
                         font-weight: bold;
                         justify-content: flex-end;
                         flex-direction: row;
+
                         @include mq("tablet") {
                             display: inherit;
                             width: 35%;
@@ -281,7 +334,7 @@
                         }
                     }
                 }
-                
+
                 &-bot {
                     display: inherit;
                     width: 100%;
@@ -289,6 +342,7 @@
                     //background-color: #ddd;
                     text-align: justify;
                     flex-direction: column;
+
                     @include mq("tablet") {
                         display: inherit;
                         width: 100%;
@@ -297,60 +351,71 @@
                         text-align: justify;
                         flex-direction: column;
                     }
+
                     h2 {
                         color: $color-blue;
                         display: none;
+
                         @include mq("tablet") {
                             display: flex;
                         }
                     }
+
                     h3 {
                         color: $color-blue;
                         display: flex;
                         font-size: 18px;
+
                         @include mq("tablet") {
                             display: none;
                         }
                     }
+
                     &-title {
                         margin-bottom: 15px;
+
                         @include mq("tablet") {
                             margin-bottom: 20px;
                         }
                     }
+
                     &-text {
                         display: none;
+
                         @include mq("tablet") {
                             font-size: $font-size;
                             display: inline-block;
                         }
                     }
+
                     &-text_mobile {
                         font-size: $font-size-medium;
                         display: inline-block;
+
                         @include mq("tablet") {
                             display: none;
                         }
                     }
-                    
+
                     &-button {
                         display: flex;
                         width: auto;
                         padding-left: 15px;
                         padding-right: 15px;
-                        height: $finger-size;        
+                        height: $finger-size;
                         margin-left: auto;
                         margin-right: auto;
                         margin-top: auto;
                         text-align: center;
                         background-color: $color-blue;
                         border-radius: $border-radius;
+
                         @include mq("tablet") {
                             display: flex;
                             width: auto;
                             padding-left: 15px;
                             padding-right: 15px;
-                            height: $finger-size;        
+                            height: $finger-size;
                             margin-left: auto;
                             margin-right: auto;
                             margin-top: auto;
@@ -358,14 +423,17 @@
                             background-color: $color-blue;
                             border-radius: $border-radius;
                         }
+
                         &:hover {
                             background-color: $color-light-blue;
                             transition: 0.2s;
                         }
+
                         p {
                             margin: auto;
                             color: white;
                             font-weight: bold;
+
                             @include mq("tablet") {
                                 margin: auto;
                                 color: white;
@@ -375,7 +443,7 @@
                     }
                 }
 
-               
+
             }
         }
     }
@@ -385,18 +453,22 @@
 .flickity-prev-next-button {
     width: 0;
     height: 0;
+
     @include mq("tablet") {
         width: 30px;
         height: 30px;
         border-radius: 5px;
     }
 }
+
 .flickity-button {
     background: transparent;
+
     &:hover {
         background: $color-light-blue;
         transition: 0.2s;
     }
+
     &-icon {
         fill: $color-blue;
     }
