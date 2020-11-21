@@ -2093,7 +2093,12 @@ https://flickity.metafizzy.co
       height: auto;
       flex-direction: column;
       margin-bottom: 20px;
-      margin-top: 20px; }
+      margin-top: 20px;
+      border: 8px solid #2f5369;
+      justify-content: center;
+      border: 8px solid #2f5369;
+      border-radius: 10px;
+      padding: 10px; }
       .etkinlikler-boxes-1:last-child, .etkinlikler-boxes-2:last-child, .etkinlikler-boxes-3:last-child, .etkinlikler-boxes-4:last-child {
         margin-top: 0; }
       @media (min-width: 768px) {
@@ -2110,34 +2115,36 @@ https://flickity.metafizzy.co
           padding: 20px; }
           .etkinlikler-boxes-1:last-child, .etkinlikler-boxes-2:last-child, .etkinlikler-boxes-3:last-child, .etkinlikler-boxes-4:last-child {
             margin-top: 0; } }
-      .etkinlikler-boxes-1 #basvur_etkinlikler, .etkinlikler-boxes-2 #basvur_etkinlikler, .etkinlikler-boxes-3 #basvur_etkinlikler, .etkinlikler-boxes-4 #basvur_etkinlikler {
-        font-weight: bold;
-        color: #2f5369;
-        transition: 0.3s;
-        text-decoration: underline; }
-        .etkinlikler-boxes-1 #basvur_etkinlikler:hover, .etkinlikler-boxes-2 #basvur_etkinlikler:hover, .etkinlikler-boxes-3 #basvur_etkinlikler:hover, .etkinlikler-boxes-4 #basvur_etkinlikler:hover {
-          transition: 0.3s;
-          color: #6bb8ca; }
-      @media (min-width: 768px) {
-        .etkinlikler-boxes-1-box1, .etkinlikler-boxes-2-box1, .etkinlikler-boxes-3-box1, .etkinlikler-boxes-4-box1 {
-          display: inherit;
-          width: 50%;
-          height: 450px;
-          flex-direction: column;
-          align-items: center;
-          padding-right: 20px; }
-          .etkinlikler-boxes-1-box1:first-child, .etkinlikler-boxes-2-box1:first-child, .etkinlikler-boxes-3-box1:first-child, .etkinlikler-boxes-4-box1:first-child {
-            margin-bottom: 0; } }
-      @media (min-width: 768px) {
+      .etkinlikler-boxes-1-box1, .etkinlikler-boxes-2-box1, .etkinlikler-boxes-3-box1, .etkinlikler-boxes-4-box1 {
+        display: inherit;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center; }
+        @media (min-width: 768px) {
+          .etkinlikler-boxes-1-box1, .etkinlikler-boxes-2-box1, .etkinlikler-boxes-3-box1, .etkinlikler-boxes-4-box1 {
+            display: inherit;
+            width: 50%;
+            height: 450px;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 20px; }
+            .etkinlikler-boxes-1-box1:first-child, .etkinlikler-boxes-2-box1:first-child, .etkinlikler-boxes-3-box1:first-child, .etkinlikler-boxes-4-box1:first-child {
+              margin-bottom: 0; } }
         .etkinlikler-boxes-1-box1-img, .etkinlikler-boxes-2-box1-img, .etkinlikler-boxes-3-box1-img, .etkinlikler-boxes-4-box1-img {
           display: inherit;
           width: 100%;
-          height: 350px;
-          border-radius: 10px; } }
-      .etkinlikler-boxes-1-box1-img img, .etkinlikler-boxes-2-box1-img img, .etkinlikler-boxes-3-box1-img img, .etkinlikler-boxes-4-box1-img img {
-        width: 100%;
-        height: 100%; }
-      @media (min-width: 768px) {
+          height: 300px;
+          border-radius: 10px; }
+          @media (min-width: 768px) {
+            .etkinlikler-boxes-1-box1-img, .etkinlikler-boxes-2-box1-img, .etkinlikler-boxes-3-box1-img, .etkinlikler-boxes-4-box1-img {
+              display: inherit;
+              width: 100%;
+              height: 350px;
+              border-radius: 10px; } }
+          .etkinlikler-boxes-1-box1-img img, .etkinlikler-boxes-2-box1-img img, .etkinlikler-boxes-3-box1-img img, .etkinlikler-boxes-4-box1-img img {
+            width: 100%;
+            height: 100%; }
         .etkinlikler-boxes-1-box1-text, .etkinlikler-boxes-2-box1-text, .etkinlikler-boxes-3-box1-text, .etkinlikler-boxes-4-box1-text {
           display: inherit;
           width: 100%;
@@ -2155,7 +2162,26 @@ https://flickity.metafizzy.co
             -ms-grid-row-align: center;
                 align-self: center;
             color: #2f5369;
-            margin-top: auto; } }
+            margin-top: auto; }
+          @media (min-width: 768px) {
+            .etkinlikler-boxes-1-box1-text, .etkinlikler-boxes-2-box1-text, .etkinlikler-boxes-3-box1-text, .etkinlikler-boxes-4-box1-text {
+              display: inherit;
+              width: 100%;
+              height: 100px;
+              flex-direction: row;
+              padding: 20px;
+              text-align: center;
+              justify-content: center;
+              align-items: center; }
+              .etkinlikler-boxes-1-box1-text h2, .etkinlikler-boxes-2-box1-text h2, .etkinlikler-boxes-3-box1-text h2, .etkinlikler-boxes-4-box1-text h2 {
+                color: #2f5369; }
+              .etkinlikler-boxes-1-box1-text p, .etkinlikler-boxes-2-box1-text p, .etkinlikler-boxes-3-box1-text p, .etkinlikler-boxes-4-box1-text p {
+                font-size: 15px;
+                display: flex;
+                -ms-grid-row-align: center;
+                    align-self: center;
+                color: #2f5369;
+                margin-top: auto; } }
       @media (min-width: 768px) {
         .etkinlikler-boxes-1-box2, .etkinlikler-boxes-2-box2, .etkinlikler-boxes-3-box2, .etkinlikler-boxes-4-box2 {
           display: inherit;
@@ -2164,33 +2190,62 @@ https://flickity.metafizzy.co
           align-items: center; }
           .etkinlikler-boxes-1-box2:first-child, .etkinlikler-boxes-2-box2:first-child, .etkinlikler-boxes-3-box2:first-child, .etkinlikler-boxes-4-box2:first-child {
             margin-bottom: 0; } }
-      @media (min-width: 768px) {
-        .etkinlikler-boxes-1-box2-img, .etkinlikler-boxes-2-box2-img, .etkinlikler-boxes-3-box2-img, .etkinlikler-boxes-4-box2-img {
-          display: inherit;
-          width: 100%;
-          height: 350px;
-          border: 0px solid #ddd;
-          padding-left: 20px;
-          flex-direction: column;
-          justify-content: center; }
-          .etkinlikler-boxes-1-box2-img p, .etkinlikler-boxes-2-box2-img p, .etkinlikler-boxes-3-box2-img p, .etkinlikler-boxes-4-box2-img p {
-            margin-bottom: 20px; }
-          .etkinlikler-boxes-1-box2-img-button, .etkinlikler-boxes-2-box2-img-button, .etkinlikler-boxes-3-box2-img-button, .etkinlikler-boxes-4-box2-img-button {
-            width: 180px;
-            height: 40px;
-            background-color: #2f5369;
-            color: white;
-            transition: 0.3s;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 5px;
-            font-weight: bold; }
-            .etkinlikler-boxes-1-box2-img-button:hover, .etkinlikler-boxes-2-box2-img-button:hover, .etkinlikler-boxes-3-box2-img-button:hover, .etkinlikler-boxes-4-box2-img-button:hover {
-              background-color: #6bb8ca;
-              transition: 0.3s; } }
-      .etkinlikler-boxes-1-box2-img img, .etkinlikler-boxes-2-box2-img img, .etkinlikler-boxes-3-box2-img img, .etkinlikler-boxes-4-box2-img img {
+      .etkinlikler-boxes-1-box2-img, .etkinlikler-boxes-2-box2-img, .etkinlikler-boxes-3-box2-img, .etkinlikler-boxes-4-box2-img {
+        display: inherit;
         width: 100%;
-        height: 100%; }
+        height: auto;
+        border: 0px solid #ddd;
+        flex-direction: column;
+        justify-content: center; }
+        .etkinlikler-boxes-1-box2-img p, .etkinlikler-boxes-2-box2-img p, .etkinlikler-boxes-3-box2-img p, .etkinlikler-boxes-4-box2-img p {
+          margin-bottom: 20px;
+          text-align: center; }
+          .etkinlikler-boxes-1-box2-img p:first-child, .etkinlikler-boxes-2-box2-img p:first-child, .etkinlikler-boxes-3-box2-img p:first-child, .etkinlikler-boxes-4-box2-img p:first-child {
+            margin-top: 10px; }
+        .etkinlikler-boxes-1-box2-img-button, .etkinlikler-boxes-2-box2-img-button, .etkinlikler-boxes-3-box2-img-button, .etkinlikler-boxes-4-box2-img-button {
+          display: block;
+          width: 180px;
+          height: 40px;
+          background-color: #2f5369;
+          color: white;
+          transition: 0.3s;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 5px;
+          font-weight: bold; }
+          .etkinlikler-boxes-1-box2-img-button:hover, .etkinlikler-boxes-2-box2-img-button:hover, .etkinlikler-boxes-3-box2-img-button:hover, .etkinlikler-boxes-4-box2-img-button:hover {
+            background-color: #6bb8ca;
+            transition: 0.3s; }
+        @media (min-width: 768px) {
+          .etkinlikler-boxes-1-box2-img, .etkinlikler-boxes-2-box2-img, .etkinlikler-boxes-3-box2-img, .etkinlikler-boxes-4-box2-img {
+            display: inherit;
+            width: 100%;
+            height: 350px;
+            border: 0px solid #ddd;
+            padding-left: 20px;
+            flex-direction: column;
+            justify-content: center; }
+            .etkinlikler-boxes-1-box2-img p, .etkinlikler-boxes-2-box2-img p, .etkinlikler-boxes-3-box2-img p, .etkinlikler-boxes-4-box2-img p {
+              margin-bottom: 20px;
+              text-align: left; }
+              .etkinlikler-boxes-1-box2-img p:first-child, .etkinlikler-boxes-2-box2-img p:first-child, .etkinlikler-boxes-3-box2-img p:first-child, .etkinlikler-boxes-4-box2-img p:first-child {
+                margin-top: 0; }
+            .etkinlikler-boxes-1-box2-img-button, .etkinlikler-boxes-2-box2-img-button, .etkinlikler-boxes-3-box2-img-button, .etkinlikler-boxes-4-box2-img-button {
+              width: 180px;
+              height: 40px;
+              background-color: #2f5369;
+              color: white;
+              transition: 0.3s;
+              margin-left: auto;
+              margin-right: auto;
+              border-radius: 5px;
+              font-weight: bold; }
+              .etkinlikler-boxes-1-box2-img-button:hover, .etkinlikler-boxes-2-box2-img-button:hover, .etkinlikler-boxes-3-box2-img-button:hover, .etkinlikler-boxes-4-box2-img-button:hover {
+                background-color: #6bb8ca;
+                transition: 0.3s; } }
+        .etkinlikler-boxes-1-box2-img img, .etkinlikler-boxes-2-box2-img img, .etkinlikler-boxes-3-box2-img img, .etkinlikler-boxes-4-box2-img img {
+          width: 100%;
+          height: 100%; }
       @media (min-width: 768px) {
         .etkinlikler-boxes-1-box2-text, .etkinlikler-boxes-2-box2-text, .etkinlikler-boxes-3-box2-text, .etkinlikler-boxes-4-box2-text {
           display: inherit;
@@ -2219,55 +2274,99 @@ https://flickity.metafizzy.co
           align-items: center; }
           .etkinlikler-boxes-1-box3:first-child, .etkinlikler-boxes-2-box3:first-child, .etkinlikler-boxes-3-box3:first-child, .etkinlikler-boxes-4-box3:first-child {
             margin-bottom: 0; } }
-      @media (min-width: 768px) {
-        .etkinlikler-boxes-1-box3-img, .etkinlikler-boxes-2-box3-img, .etkinlikler-boxes-3-box3-img, .etkinlikler-boxes-4-box3-img {
-          display: inherit;
-          width: 100%;
-          height: 450px;
-          border: 0px solid #ddd;
-          padding-left: 20px;
-          flex-direction: column;
-          justify-content: flex-start; }
-          .etkinlikler-boxes-1-box3-img p, .etkinlikler-boxes-2-box3-img p, .etkinlikler-boxes-3-box3-img p, .etkinlikler-boxes-4-box3-img p {
-            margin-bottom: 20px; }
-          .etkinlikler-boxes-1-box3-img-button, .etkinlikler-boxes-2-box3-img-button, .etkinlikler-boxes-3-box3-img-button, .etkinlikler-boxes-4-box3-img-button {
-            width: 180px;
-            height: 40px;
-            background-color: #2f5369;
-            color: white;
-            transition: 0.3s;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-bottom: 40px; }
-            .etkinlikler-boxes-1-box3-img-button:last-child, .etkinlikler-boxes-2-box3-img-button:last-child, .etkinlikler-boxes-3-box3-img-button:last-child, .etkinlikler-boxes-4-box3-img-button:last-child {
-              margin-bottom: 0; }
-            .etkinlikler-boxes-1-box3-img-button:hover, .etkinlikler-boxes-2-box3-img-button:hover, .etkinlikler-boxes-3-box3-img-button:hover, .etkinlikler-boxes-4-box3-img-button:hover {
-              background-color: #6bb8ca;
-              transition: 0.3s; } }
-      .etkinlikler-boxes-1-box3-img img, .etkinlikler-boxes-2-box3-img img, .etkinlikler-boxes-3-box3-img img, .etkinlikler-boxes-4-box3-img img {
+      .etkinlikler-boxes-1-box3-img, .etkinlikler-boxes-2-box3-img, .etkinlikler-boxes-3-box3-img, .etkinlikler-boxes-4-box3-img {
+        display: inherit;
         width: 100%;
-        height: 100%; }
-      @media (min-width: 768px) {
-        .etkinlikler-boxes-1-box3-text, .etkinlikler-boxes-2-box3-text, .etkinlikler-boxes-3-box3-text, .etkinlikler-boxes-4-box3-text {
-          display: inherit;
+        height: auto;
+        border: 0px solid #ddd;
+        flex-direction: column;
+        text-align: center; }
+        .etkinlikler-boxes-1-box3-img p, .etkinlikler-boxes-2-box3-img p, .etkinlikler-boxes-3-box3-img p, .etkinlikler-boxes-4-box3-img p {
+          margin-bottom: 20px; }
+        .etkinlikler-boxes-1-box3-img-button, .etkinlikler-boxes-2-box3-img-button, .etkinlikler-boxes-3-box3-img-button, .etkinlikler-boxes-4-box3-img-button {
+          display: block;
+          width: 180px;
+          height: 40px;
+          background-color: #2f5369;
+          color: white;
+          transition: 0.3s;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 5px;
+          font-weight: bold;
+          margin-bottom: 40px; }
+          .etkinlikler-boxes-1-box3-img-button:last-child, .etkinlikler-boxes-2-box3-img-button:last-child, .etkinlikler-boxes-3-box3-img-button:last-child, .etkinlikler-boxes-4-box3-img-button:last-child {
+            margin-bottom: 0; }
+          .etkinlikler-boxes-1-box3-img-button:hover, .etkinlikler-boxes-2-box3-img-button:hover, .etkinlikler-boxes-3-box3-img-button:hover, .etkinlikler-boxes-4-box3-img-button:hover {
+            background-color: #6bb8ca;
+            transition: 0.3s; }
+        @media (min-width: 768px) {
+          .etkinlikler-boxes-1-box3-img, .etkinlikler-boxes-2-box3-img, .etkinlikler-boxes-3-box3-img, .etkinlikler-boxes-4-box3-img {
+            display: inherit;
+            width: 100%;
+            height: 450px;
+            border: 0px solid #ddd;
+            padding-left: 20px;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: left; }
+            .etkinlikler-boxes-1-box3-img p, .etkinlikler-boxes-2-box3-img p, .etkinlikler-boxes-3-box3-img p, .etkinlikler-boxes-4-box3-img p {
+              margin-bottom: 20px; }
+            .etkinlikler-boxes-1-box3-img-button, .etkinlikler-boxes-2-box3-img-button, .etkinlikler-boxes-3-box3-img-button, .etkinlikler-boxes-4-box3-img-button {
+              width: 180px;
+              height: 40px;
+              background-color: #2f5369;
+              color: white;
+              transition: 0.3s;
+              margin-left: auto;
+              margin-right: auto;
+              border-radius: 5px;
+              font-weight: bold;
+              margin-bottom: 40px; }
+              .etkinlikler-boxes-1-box3-img-button:last-child, .etkinlikler-boxes-2-box3-img-button:last-child, .etkinlikler-boxes-3-box3-img-button:last-child, .etkinlikler-boxes-4-box3-img-button:last-child {
+                margin-bottom: 0; }
+              .etkinlikler-boxes-1-box3-img-button:hover, .etkinlikler-boxes-2-box3-img-button:hover, .etkinlikler-boxes-3-box3-img-button:hover, .etkinlikler-boxes-4-box3-img-button:hover {
+                background-color: #6bb8ca;
+                transition: 0.3s; } }
+        .etkinlikler-boxes-1-box3-img img, .etkinlikler-boxes-2-box3-img img, .etkinlikler-boxes-3-box3-img img, .etkinlikler-boxes-4-box3-img img {
           width: 100%;
-          height: 100px;
-          flex-direction: row;
-          padding: 20px;
-          text-align: center;
-          justify-content: center;
-          align-items: center; }
-          .etkinlikler-boxes-1-box3-text h2, .etkinlikler-boxes-2-box3-text h2, .etkinlikler-boxes-3-box3-text h2, .etkinlikler-boxes-4-box3-text h2 {
-            color: #2f5369; }
-          .etkinlikler-boxes-1-box3-text p, .etkinlikler-boxes-2-box3-text p, .etkinlikler-boxes-3-box3-text p, .etkinlikler-boxes-4-box3-text p {
-            font-size: 15px;
-            display: flex;
-            -ms-grid-row-align: center;
-                align-self: center;
-            color: #2f5369;
-            margin-top: auto; } }
+          height: 100%; }
+      .etkinlikler-boxes-1-box3-text, .etkinlikler-boxes-2-box3-text, .etkinlikler-boxes-3-box3-text, .etkinlikler-boxes-4-box3-text {
+        display: inherit;
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center; }
+        .etkinlikler-boxes-1-box3-text h2, .etkinlikler-boxes-2-box3-text h2, .etkinlikler-boxes-3-box3-text h2, .etkinlikler-boxes-4-box3-text h2 {
+          color: #2f5369; }
+        .etkinlikler-boxes-1-box3-text p, .etkinlikler-boxes-2-box3-text p, .etkinlikler-boxes-3-box3-text p, .etkinlikler-boxes-4-box3-text p {
+          font-size: 15px;
+          display: flex;
+          -ms-grid-row-align: center;
+              align-self: center;
+          color: #2f5369;
+          margin-top: auto; }
+        @media (min-width: 768px) {
+          .etkinlikler-boxes-1-box3-text, .etkinlikler-boxes-2-box3-text, .etkinlikler-boxes-3-box3-text, .etkinlikler-boxes-4-box3-text {
+            display: inherit;
+            width: 100%;
+            height: 100px;
+            flex-direction: row;
+            padding: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center; }
+            .etkinlikler-boxes-1-box3-text h2, .etkinlikler-boxes-2-box3-text h2, .etkinlikler-boxes-3-box3-text h2, .etkinlikler-boxes-4-box3-text h2 {
+              color: #2f5369; }
+            .etkinlikler-boxes-1-box3-text p, .etkinlikler-boxes-2-box3-text p, .etkinlikler-boxes-3-box3-text p, .etkinlikler-boxes-4-box3-text p {
+              font-size: 15px;
+              display: flex;
+              -ms-grid-row-align: center;
+                  align-self: center;
+              color: #2f5369;
+              margin-top: auto; } }
       @media (min-width: 768px) {
         .etkinlikler-boxes-1-box4, .etkinlikler-boxes-2-box4, .etkinlikler-boxes-3-box4, .etkinlikler-boxes-4-box4 {
           display: inherit;
