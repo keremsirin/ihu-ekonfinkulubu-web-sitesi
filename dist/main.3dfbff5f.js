@@ -170,6 +170,20 @@ $('.homepage-slider').flickity({
   contain: true,
   wrapAround: true
 });
+
+if ($(window).width() < 350) {
+  $("#dku").text('Denetleme K. Ü.');
+  $("#bya1").text('Başkan Y.');
+  $("#bya2").text('Başkan Y.');
+  $("#sms1").text('Sosyal Medya Y.');
+  $("#sms2").text('Sosyal Medya Y.');
+  $("#smy").text('Sosyal Medya Y.');
+  $("#abdurrahman").text('A. ALKOLİ');
+  $("#sbm").text('A. ÇETİN');
+  $("#kim").text('E. Gazi ÇELİK');
+  $("#smm").text('Social Media M.');
+  $(".hakkimizda-vm").css('height', '7270px');
+}
 },{}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -198,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50897" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61230" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

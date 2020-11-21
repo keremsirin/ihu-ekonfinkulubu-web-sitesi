@@ -31,7 +31,7 @@
             flex-direction: column;
         }
 
-        &-1, &-2 {
+        &-1, &-2, &-3, &-4 {
             display: inherit;
             width: 100%;
             height: auto;
@@ -48,82 +48,291 @@
                 flex-direction: row;
                 margin-bottom: $gutter;
                 margin-top: $gutter;
+                justify-content: flex-start;
+                border: 8px solid $color-blue;
+                border-radius: 10px;
+                padding: 20px;
                 &:last-child {
                     margin-top: 0;
                 }
             }
 
-            &-box1, &-box2  {
-                display: inherit;
-                width: 100%;
-                height: 450px;
-                flex-direction: column;
-                align-items: center;
-                &:first-child {
-                    margin-bottom: $gutter;
+            #basvur_etkinlikler {
+                font-weight: bold;
+                color: $color-blue;
+                transition: 0.3s;
+                text-decoration: underline;
+
+                &:hover {
+                    transition: 0.3s;
+                    color: $color-light-blue;
                 }
+            }
+
+            &-box1 {
                 @include mq("tablet") {
                     display: inherit;
-                    width: 100%;
+                    width: 50%;
                     height: 450px;
                     flex-direction: column;
                     align-items: center;
+                    padding-right: 20px;
                     &:first-child {
                         margin-bottom: 0;
                     }
                 }
                 
                 &-img {
-                    display: inherit;
-                    width: 100%;
-                    height: 350px;
-                    border: 1px solid #ddd;
                     @include mq("tablet") {
                         display: inherit;
-                        width: 80%;
+                        width: 100%;
                         height: 350px;
-                        border: 1px solid #ddd;
+                        // border: 1px solid #ddd;
+                        // border-top: 8px solid $color-blue;
+                        // border-left: 8px solid $color-blue;
+                        border-radius: 10px;
                     }
                     img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-                &-text {
-                    display: inherit;
-                    width: 100%;
-                    height: 100px;
-                    border-right: 1px solid #ddd;
-                    border-left: 1px solid #ddd;
-                    border-bottom: 1px solid #ddd;
-                    flex-direction: column;
-                    padding: 10px;
-                    h4 {
-                        color: $color-blue;
-                    }
-                    p {
-                        font-size: $font-size-medium;
-                        display: flex;
-                        align-self: flex-end;
-                        color: $color-blue;
-                        margin-top: auto;
-                    }
+                &-text {                    
                     @include mq("tablet") {
                         display: inherit;
-                        width: 80%;
+                        width: 100%;
                         height: 100px;
-                        border-right: 1px solid #ddd;
-                        border-left: 1px solid #ddd;
-                        border-bottom: 1px solid #ddd;
-                        flex-direction: column;
+                        // border-left: 1px solid #ddd;
+                        // border-bottom: 1px solid #ddd;
+                        flex-direction: row;
                         padding: 20px;
-                        h4 {
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        h2 {
                             color: $color-blue;
                         }
                         p {
                             font-size: $font-size-medium;
                             display: flex;
-                            align-self: flex-end;
+                            align-self: center;
+                            color: $color-blue;
+                            margin-top: auto;
+                        }
+                    }
+                }
+            }
+
+
+
+            &-box2 {
+                @include mq("tablet") {
+                    display: inherit;
+                    width: 50%;
+                    height: 450px;
+                    // flex-direction: column;
+                    align-items: center;
+                    // background-color: red;
+                    &:first-child {
+                        margin-bottom: 0;
+                    }
+                }
+                
+                &-img {
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 100%;
+                        height: 350px;
+                        border: 0px solid #ddd;
+                        padding-left: 20px;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        p {
+                            margin-bottom: 20px;
+                        }
+
+                        &-button {
+                            width: 180px;
+                            height: 40px;
+                            background-color: $color-blue;
+                            color: white;
+                            transition: 0.3s;
+                            margin-left: auto;
+                            margin-right: auto;
+                            border-radius: $border-radius;
+                            font-weight: bold;
+
+                            &:hover {
+                                background-color: $color-light-blue;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &-text {
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 100%;
+                        height: 100px;
+                        // border-left: 1px solid #ddd;
+                        // border-bottom: 1px solid #ddd;
+                        flex-direction: row;
+                        padding: 20px;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        h2 {
+                            color: $color-blue;
+                        }
+                        p {
+                            font-size: $font-size-medium;
+                            display: flex;
+                            align-self: center;
+                            color: $color-blue;
+                            margin-top: auto;
+                        }
+                    }
+                }
+
+                
+            }
+
+            &-box3 {
+                
+                @include mq("tablet") {
+                    display: inherit;
+                    width: 50%;
+                    height: 450px;
+                    flex-direction: column;
+                    align-items: center;
+                    // background-color: red;
+                    &:first-child {
+                        margin-bottom: 0;
+                    }
+                }
+                
+                &-img {
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 100%;
+                        height: 450px;
+                        border: 0px solid #ddd;
+                        padding-left: 20px;
+                        flex-direction: column;
+                        justify-content: flex-start;
+
+                        p {
+                            margin-bottom: 20px;
+                        }
+
+                        &-button {
+                            width: 180px;
+                            height: 40px;
+                            background-color: $color-blue;
+                            color: white;
+                            transition: 0.3s;
+                            margin-left: auto;
+                            margin-right: auto;
+                            border-radius: $border-radius;
+                            font-weight: bold;
+                            margin-bottom: 40px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            &:hover {
+                                background-color: $color-light-blue;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &-text {
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 100%;
+                        height: 100px;
+                        // border-left: 1px solid #ddd;
+                        // border-bottom: 1px solid #ddd;
+                        flex-direction: row;
+                        padding: 20px;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        h2 {
+                            color: $color-blue;
+                        }
+                        p {
+                            font-size: $font-size-medium;
+                            display: flex;
+                            align-self: center;
+                            color: $color-blue;
+                            margin-top: auto;
+                        }
+                    }
+                }
+
+            }
+
+            &-box4 {
+                @include mq("tablet") {
+                    display: inherit;
+                    width: 50%;
+                    height: 450px;
+                    flex-direction: column;
+                    align-items: center;
+                    // background-color: red;
+                    &:first-child {
+                        margin-bottom: 0;
+                    }
+                }
+                
+                &-img {
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 100%;
+                        height: 350px;
+                        border: 0px solid #ddd;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &-text {
+                    @include mq("tablet") {
+                        display: inherit;
+                        width: 100%;
+                        height: 100px;
+                        // border-left: 1px solid #ddd;
+                        // border-bottom: 1px solid #ddd;
+                        flex-direction: row;
+                        padding: 20px;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+
+                        h2 {
+                            color: $color-blue;
+                        }
+                        p {
+                            font-size: $font-size-medium;
+                            display: flex;
+                            align-self: center;
                             color: $color-blue;
                             margin-top: auto;
                         }

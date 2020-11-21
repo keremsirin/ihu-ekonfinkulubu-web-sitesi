@@ -12,14 +12,14 @@
     &-vm {
         display: flex;
         width: 100%;
-        height: 4400px; //değişebilir
+        height: 7180px; //değişebilir
         flex-direction: column;
         padding-top: 40px;
 
         @include mq("tablet") {
             display: flex;
             width: 100%;
-            height: 2500px; //değişebilir
+            height: 4140px; //değişebilir
             flex-direction: column;
             padding-top: 40px;
         }
@@ -176,6 +176,34 @@
                             justify-content: center;
                         }
 
+                        &-img {
+                            display: flex;
+                            position: absolute;
+                            width: 280px;
+                            height: 490px;
+                            margin-left: 0px;
+                            // background-color: red;
+                            background-image: url(../img/card1.png);
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            // position: absolute;
+
+                            @include mq("tablet") {
+                                display: flex;
+                                position: relative;
+                                width: 280px;
+                                height: 490px;
+                                // margin-left: 50px;
+                                // background-color: red;
+                                background-image: url(../img/card1.png);
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+
+                            }
+                        }
+
                         a {
                             display: flex;
                             position: relative;
@@ -183,10 +211,12 @@
                             width: 50px;
                             height: 20px;
                             top: 360px;
-                            left: -162px;
+                            // left: -162px;
+                            left: 118px;
                             color: white;
                             font-size: $font-size-small;
                             font-style: italic;
+                            
 
                             @include mq("tablet") {
                                 display: flex;
@@ -195,7 +225,7 @@
                                 width: 50px;
                                 height: 20px;
                                 top: 360px;
-                                left: -162px;
+                                left: 118px;
                                 color: white;
                                 font-size: $font-size-small;
                                 font-style: italic;
@@ -204,23 +234,24 @@
                             &:hover {
                                 color: $color-light-blue;
                             }
+                            
                         }
 
-                        img {
-                            display: flex;
-                            position: relative;
-                            width: 280px;
-                            height: 490px;
-                            margin-left: 50px;
+                        // img {
+                        //     display: flex;
+                        //     position: relative;
+                        //     width: 280px !important;
+                        //     height: 490px;
+                        //     margin-left: 50px;
 
-                            @include mq("tablet") {
-                                display: flex;
-                                position: relative;
-                                width: 280px;
-                                height: 490px;
-                                margin-left: 50px;
-                            }
-                        }
+                        //     @include mq("tablet") {
+                        //         display: flex;
+                        //         position: relative;
+                        //         width: 280px !important;
+                        //         height: 490px;
+                        //         margin-left: 50px;
+                        //     }
+                        // }
                     }
                 }
             }
@@ -313,8 +344,7 @@
                             //flex-direction: column;
                             justify-content: center;
                             justify-items: center;
-                        }
-
+                        }                   
 
                         a {
                             display: flex;
@@ -323,7 +353,7 @@
                             width: 50px;
                             height: 20px;
                             top: 360px;
-                            left: -162px;
+                            left: 118px;
                             color: white;
                             font-size: $font-size-small;
                             font-style: italic;
@@ -335,7 +365,7 @@
                                 width: 50px;
                                 height: 20px;
                                 top: 360px;
-                                left: -162px;
+                                left: 118px;
                                 color: white;
                                 font-size: $font-size-small;
                                 font-style: italic;
@@ -346,22 +376,22 @@
                             }
                         }
 
-                        img {
-                            display: flex;
-                            width: 280px;
-                            height: 490px;
-                            position: relative;
-                            margin-left: 50px;
+                        // img {
+                        //     display: flex;
+                        //     width: 280px !important;
+                        //     height: 490px;
+                        //     position: relative;
+                        //     margin-left: 50px;
 
 
-                            @include mq("tablet") {
-                                display: flex;
-                                width: 280px;
-                                height: 490px;
-                                position: relative;
-                                margin-left: 50px;
-                            }
-                        }
+                        //     @include mq("tablet") {
+                        //         display: flex;
+                        //         width: 280px !important;
+                        //         height: 490px;
+                        //         position: relative;
+                        //         margin-left: 50px;
+                        //     }
+                        // }
                     }
 
                     &-2,
@@ -605,4 +635,282 @@
         }
     }
 
+}
+
+
+
+
+
+.hakkimizda-vm-yonetim-cont2-link-2-img2 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont2-link-3-img3 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card3.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont3-link-4-img4 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card4.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont3-link-5-img5 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card5.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont4-link-6-img6 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card6.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont4-link-7-img7 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card10.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont4-link-6-img8 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card8.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont4-link-7-img9 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card9.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont4-link-6-img10 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card7.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont4-link-7-img11 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card11.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card11.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.hakkimizda-vm-yonetim-cont4-link-6-img12 {
+    display: flex;
+    position: absolute;
+    width: 280px;
+    height: 490px;
+    margin-left: 0px;
+    // background-color: red;
+    background-image: url(../img/card12.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include mq("tablet") {
+        display: flex;
+        position: relative;
+        width: 280px;
+        height: 490px;
+        background-image: url(../img/card12.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+#bottom_btn, #bottom_txt {
+    width: 100%;
+}
+#bottom_txt {
+    margin-bottom: 20px;
+    @include mq("tablet") {
+        margin-bottom: 0;
+    }
 }

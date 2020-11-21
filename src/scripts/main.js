@@ -52,3 +52,20 @@ $('.homepage-slider').flickity({
   wrapAround: true
 });
 
+if ($(window).width() < 350) {
+    $("#dku").text('Denetleme K. Ü.');
+    $("#bya1").text('Başkan Y.');
+    $("#bya2").text('Başkan Y.');
+    $("#sms1").text('Sosyal Medya Y.');
+    $("#sms2").text('Sosyal Medya Y.');
+    $("#smy").text('Sosyal Medya Y.');
+
+
+    $("#abdurrahman").text('A. ALKOLİ');
+    $("#sbm").text('A. ÇETİN');
+    $("#kim").text('E. Gazi ÇELİK');
+    $("#smm").text('Social Media M.');
+    $(".hakkimizda-vm").css('height', '7270px');
+
+
+}
