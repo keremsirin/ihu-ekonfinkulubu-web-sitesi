@@ -5,22 +5,33 @@ block content
     .iletisim
         .iletisim-infos 
             .iletisim-infos-inclusive
-                .iletisim-infos-inclusive-address
-                    .iletisim-infos-inclusive-address-icon
-                        i.fa.fa-map-marker(aria-hidden='true') 
-                    a(href='https://goo.gl/maps/SiPzgWFoLtH4iKZB8', target='_blank') Basak Mah. Ordu Cad. F-05 Blok No:3 P.K. 34480 Basaksehir/IST.
-                .iletisim-infos-inclusive-email
-                    .iletisim-infos-inclusive-email-icon
-                        i.fa.fa-envelope(aria-hidden='true')
-                    a(href='mailto:info@ihueconfins.com') info@ihueconfin.com
-                .iletisim-infos-inclusive-phone
-                    .iletisim-infos-inclusive-phone-icon
-                        i.fa.fa-phone(aria-hidden='true')
-                    a(href='tel:+90 212 692 0212') +90 212 692 0212
+                .iletisim-infos-inclusive-left
+                    .iletisim-infos-inclusive-left-form-items
+                        h1#iletisim_h1 Send Email To Us!
+                        form(action="https://formspree.io/f/mwkwnayd" method="POST")
+                            input.email(type="email", name="Email", placeholder="Your Email Address")                                
+                            input.subject(type="text", name="Konu", placeholder="Subject")                                
+                            textarea.message(name="Mesaj", placeholder="Your Message", cols="2" rows="10")
+                            button.submit(type="submit") Send
+
+
+                .iletisim-infos-inclusive-right
+                    .iletisim-infos-inclusive-right-address
+                        .iletisim-infos-inclusive-right-address-icon
+                            i.fa.fa-map-marker(aria-hidden='true') 
+                        a(href='https://goo.gl/maps/SiPzgWFoLtH4iKZB8', target='_blank') Başak Mah. Ordu Cad. F-05 Blok No:3 P.K. 34480 Başakşehir/İST.
+                    .iletisim-infos-inclusive-right-email
+                        .iletisim-infos-inclusive-right-email-icon
+                            i.fa.fa-envelope(aria-hidden='true')
+                        a(href='mailto:info@ihueconfin.com') info@ihueconfin.com
+                    .iletisim-infos-inclusive-right-phone
+                        .iletisim-infos-inclusive-right-phone-icon
+                            i.fa.fa-phone(aria-hidden='true')
+                        a(href='tel:+90 212 692 0212') +90 212 692 0212
             .iletisim-infos-maps
                 iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.917016194374!2d28.794225915417996!3d41.13633747928812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caaf4c21136f81%3A0x474663fb7f0c41b4!2s%C4%B0bn%20Haldun%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1600112701028!5m2!1str!2str', width='100%', height='100%', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
 
-        .iletisim-img
+        //- .iletisim-img
             .iletisim-img-gate
                 img.gate(src='../../img/campus3.jpg')
             .iletisim-img-campus            

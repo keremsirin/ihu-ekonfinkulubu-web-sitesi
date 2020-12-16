@@ -137,8 +137,21 @@
 
         @include mq("tablet") {
           color: $color-blue;
-          width: 110px;
+          width: 90px;
+          font-size: $font-size-medium;
+          padding-left: 0;
+          padding-right: 0;
         }
+        @include mq("desktop") {
+          color: $color-blue;
+          width: 114px;
+          font-size: $font-size;
+          padding-left: $gutter;
+          padding-right: $gutter;
+
+        }
+        
+
         &:hover {
           background-color: $color-blue;
           //background-color: $color-light-blue;
@@ -146,6 +159,33 @@
           @include mq("tablet") {
           background-color: $color-light-blue;            
           }
+        }
+      }
+    }
+
+    #sign_up {
+      background-color: $color-blue;
+      border-radius: $border-radius;
+      color: white;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      @include mq("tablet") {
+        margin-left: 0;
+        margin-right: 0;
+        width: 90px;
+      }
+      @include mq("desktop") {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 114px;
+      }
+
+      &:hover {
+        background-color: $color-blue;
+
+        @include mq("tablet") {
+          background-color: $color-light-blue;
         }
       }
     }

@@ -69,3 +69,36 @@ if ($(window).width() < 350) {
 
 
 }
+
+
+
+$(document).ready(function () {
+  $(".submit").click(function (event) {
+      console.log("clicked")
+
+      var email = $('.email').val()
+      var subject = $('.subject').val()
+      var message = $('.message').val()
+
+      if(email.length > 5 && email.includes('@') && email.includes('.')) {
+          console.log('ok')
+      } else {
+          event.preventDefault()
+          alert('Lütfen geçerli bir email adresi giriniz!')
+      }
+
+      if(subject.length > 2) {
+          console.log('ok')
+      } else {
+          event.preventDefault()
+          alert('Lütfen daha uzun bir konu başlığı giriniz!')
+      }
+
+      if(message.length > 10) {
+          console.log('ok')
+      } else {
+          event.preventDefault()
+          alert('Lütfen daha uzun bir mesaj giriniz!')
+      }
+  })
+})

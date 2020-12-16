@@ -1,0 +1,39 @@
+.kvkk {
+    display: flex;
+    width: 100%;
+    height: auto;
+    // background-color: red;
+
+    &-text {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        p {
+            line-height: 20px;
+            text-align: justify;
+        }
+        #kvkk_middle {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+
+        .kvkk_mb_full {
+            margin-bottom: 20px;
+        }
+        .kvkk_mb_half {
+            margin-bottom: 10px;
+        }
+
+        .kvkk_width {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .kvkk_mt {
+            margin-top: 20px;
+        }
+        
+    }
+}

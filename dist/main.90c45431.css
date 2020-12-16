@@ -640,13 +640,44 @@ https://flickity.metafizzy.co
         @media (min-width: 768px) {
           .Header-menu-pages a {
             color: #2f5369;
-            width: 110px; } }
+            width: 90px;
+            font-size: 15px;
+            padding-left: 0;
+            padding-right: 0; } }
+        @media (min-width: 992px) {
+          .Header-menu-pages a {
+            color: #2f5369;
+            width: 114px;
+            font-size: 16px;
+            padding-left: 20px;
+            padding-right: 20px; } }
         .Header-menu-pages a:hover {
           background-color: #2f5369;
           border-radius: 5px; }
           @media (min-width: 768px) {
             .Header-menu-pages a:hover {
               background-color: #6bb8ca; } }
+    .Header-menu #sign_up {
+      background-color: #2f5369;
+      border-radius: 5px;
+      color: white;
+      margin-left: 10px;
+      margin-right: 10px; }
+      @media (min-width: 768px) {
+        .Header-menu #sign_up {
+          margin-left: 0;
+          margin-right: 0;
+          width: 90px; } }
+      @media (min-width: 992px) {
+        .Header-menu #sign_up {
+          margin-left: 10px;
+          margin-right: 10px;
+          width: 114px; } }
+      .Header-menu #sign_up:hover {
+        background-color: #2f5369; }
+        @media (min-width: 768px) {
+          .Header-menu #sign_up:hover {
+            background-color: #6bb8ca; } }
     .Header-menu-lang {
       display: none; }
       @media (min-width: 768px) {
@@ -882,6 +913,21 @@ https://flickity.metafizzy.co
         text-align: center; } }
     .Footer-bottom p {
       font-size: 0.8em; }
+
+#kvkk {
+  color: white;
+  transition: 0.3s;
+  text-decoration: underline; }
+  #kvkk:hover {
+    color: #2f5369; }
+
+#kvkk_en {
+  color: white;
+  transition: 0.3s;
+  text-decoration: underline;
+  font-size: 0.8em; }
+  #kvkk_en:hover {
+    color: #2f5369; }
 
 .homepage {
   display: flex;
@@ -1252,14 +1298,14 @@ https://flickity.metafizzy.co
   .hakkimizda-vm {
     display: flex;
     width: 100%;
-    height: 7180px;
+    height: 8100px;
     flex-direction: column;
     padding-top: 40px; }
     @media (min-width: 768px) {
       .hakkimizda-vm {
         display: flex;
         width: 100%;
-        height: 4140px;
+        height: 4340px;
         flex-direction: column;
         padding-top: 40px; } }
     .hakkimizda-vm h2 {
@@ -1925,6 +1971,27 @@ https://flickity.metafizzy.co
       background-position: center;
       background-repeat: no-repeat; } }
 
+.hakkimizda-vm-yonetim-cont4-link-7-img13 {
+  display: flex;
+  position: absolute;
+  width: 280px;
+  height: 490px;
+  margin-left: 0px;
+  background-image: url(/card13.c61b22c8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .hakkimizda-vm-yonetim-cont4-link-7-img13 {
+      display: flex;
+      position: relative;
+      width: 280px;
+      height: 490px;
+      background-image: url(/card13.c61b22c8.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; } }
+
 #bottom_btn, #bottom_txt {
   width: 100%; }
 
@@ -1933,6 +2000,9 @@ https://flickity.metafizzy.co
   @media (min-width: 768px) {
     #bottom_txt {
       margin-bottom: 0; } }
+
+#about_mt {
+  margin-top: 20px; }
 
 .blog {
   display: flex;
@@ -2408,13 +2478,13 @@ https://flickity.metafizzy.co
 .iletisim {
   display: flex;
   width: 100%;
-  height: 600px;
+  height: 1200px;
   justify-content: center; }
   @media (min-width: 768px) {
     .iletisim {
       display: flex;
       width: 100%;
-      height: 600px;
+      height: 900px;
       justify-content: center; } }
   .iletisim-infos {
     display: flex;
@@ -2424,137 +2494,248 @@ https://flickity.metafizzy.co
     @media (min-width: 768px) {
       .iletisim-infos {
         display: flex;
-        width: 50%;
+        width: 100%;
         height: 100%;
         flex-direction: column; } }
     .iletisim-infos-inclusive {
       display: flex;
       flex-direction: column;
-      height: 40%;
+      height: 100%;
       width: 100%;
       margin: 40px 0;
-      justify-content: space-around; }
+      justify-content: center;
+      align-items: center; }
       @media (min-width: 768px) {
         .iletisim-infos-inclusive {
           display: flex;
-          flex-direction: column;
-          height: 40%;
+          flex-direction: row;
+          height: 50%;
           width: 100%;
           margin: 40px 0;
-          justify-content: space-around; } }
-      .iletisim-infos-inclusive a {
-        font-size: 15px;
-        padding-left: 20px; }
-        @media (min-width: 768px) {
-          .iletisim-infos-inclusive a {
-            font-size: 16px;
-            padding-left: 20px; } }
-      .iletisim-infos-inclusive a:hover {
-        color: #6bb8ca; }
-      .iletisim-infos-inclusive-address {
-        display: flex;
+          justify-content: space-between; } }
+      .iletisim-infos-inclusive #iletisim_h1 {
+        color: #2f5369;
+        text-align: center; }
+      .iletisim-infos-inclusive-left {
         width: 100%;
-        height: 10%;
-        align-items: center; }
+        height: auto;
+        padding-top: 25px; }
         @media (min-width: 768px) {
-          .iletisim-infos-inclusive-address {
-            display: flex;
-            width: 100%;
-            height: 10%;
-            align-items: center; } }
-        .iletisim-infos-inclusive-address-icon {
-          display: flex;
-          width: 40px;
-          height: 40px;
+          .iletisim-infos-inclusive-left {
+            width: 50%; } }
+        .iletisim-infos-inclusive-left-form {
+          display: inherit;
+          width: 100%;
+          height: auto;
+          flex-direction: column;
           justify-content: center;
           align-items: center; }
           @media (min-width: 768px) {
-            .iletisim-infos-inclusive-address-icon {
-              display: flex;
-              width: 40px;
+            .iletisim-infos-inclusive-left-form {
+              width: 50%; } }
+          .iletisim-infos-inclusive-left-form h1 {
+            color: #2f5369;
+            text-align: center; }
+            @media (min-width: 768px) {
+              .iletisim-infos-inclusive-left-form h1 {
+                color: #2f5369; } }
+          .iletisim-infos-inclusive-left-form-items {
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+            padding-right: 0; }
+            @media (min-width: 768px) {
+              .iletisim-infos-inclusive-left-form-items {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 80%; } }
+            .iletisim-infos-inclusive-left-form-items input, .iletisim-infos-inclusive-left-form-items textarea {
+              display: inherit;
+              width: 100%;
+              border: 1px solid #6bb8ca;
+              font-size: 15px;
               height: 40px;
-              justify-content: center;
-              align-items: center; } }
-        .iletisim-infos-inclusive-address i {
-          padding-left: 10px;
-          padding-right: 10px;
-          font-size: 34px;
-          color: #2f5369; }
-          @media (min-width: 768px) {
-            .iletisim-infos-inclusive-address i {
-              font-size: 40px;
-              color: #2f5369; } }
-      .iletisim-infos-inclusive-email {
+              margin-bottom: 20px;
+              border-radius: 5px;
+              padding-left: 10px;
+              color: #2f5369;
+              background-color: transparent; }
+              .iletisim-infos-inclusive-left-form-items input::-moz-placeholder, .iletisim-infos-inclusive-left-form-items textarea::-moz-placeholder {
+                font-family: "Open Sans", Arial, sans-serif;
+                color: #2f5369; }
+              .iletisim-infos-inclusive-left-form-items input:-ms-input-placeholder, .iletisim-infos-inclusive-left-form-items textarea:-ms-input-placeholder {
+                font-family: "Open Sans", Arial, sans-serif;
+                color: #2f5369; }
+              .iletisim-infos-inclusive-left-form-items input::placeholder, .iletisim-infos-inclusive-left-form-items textarea::placeholder {
+                font-family: "Open Sans", Arial, sans-serif;
+                color: #2f5369; }
+            .iletisim-infos-inclusive-left-form-items input:first-child {
+              margin-top: 20px; }
+            .iletisim-infos-inclusive-left-form-items input {
+              padding-top: 5px; }
+              .iletisim-infos-inclusive-left-form-items input::-moz-placeholder {
+                padding-top: 5px; }
+              .iletisim-infos-inclusive-left-form-items input:-ms-input-placeholder {
+                padding-top: 5px; }
+              .iletisim-infos-inclusive-left-form-items input::placeholder {
+                padding-top: 5px; }
+            .iletisim-infos-inclusive-left-form-items textarea {
+              resize: none;
+              max-width: 100%;
+              height: 100px;
+              padding-top: 10px; }
+            .iletisim-infos-inclusive-left-form-items button {
+              display: block;
+              width: 150px;
+              height: 45px;
+              margin-left: auto;
+              margin-right: auto;
+              color: white;
+              background-color: #2f5369;
+              border: 1px solid #2f5369;
+              font-weight: bold;
+              border-radius: 5px;
+              transition: 0.3s;
+              margin-bottom: 40px; }
+              .iletisim-infos-inclusive-left-form-items button:hover {
+                transition: 0.3s;
+                background-color: #6bb8ca; }
+      .iletisim-infos-inclusive-right {
         display: flex;
         width: 100%;
-        height: 10%;
-        align-items: center; }
+        height: auto;
+        flex-direction: column;
+        justify-content: center; }
         @media (min-width: 768px) {
-          .iletisim-infos-inclusive-email {
-            display: flex;
-            width: 100%;
-            height: 10%;
-            align-items: center; } }
-        .iletisim-infos-inclusive-email-icon {
+          .iletisim-infos-inclusive-right {
+            width: 50%; } }
+        .iletisim-infos-inclusive-right a {
+          font-size: 15px;
+          padding-left: 20px; }
+          @media (min-width: 768px) {
+            .iletisim-infos-inclusive-right a {
+              font-size: 16px;
+              padding-left: 20px; } }
+        .iletisim-infos-inclusive-right a:hover {
+          color: #6bb8ca; }
+        .iletisim-infos-inclusive-right-address {
           display: flex;
-          width: 40px;
-          height: 40px;
-          justify-content: center;
-          align-items: center; }
+          width: 100%;
+          height: 10%;
+          align-items: center;
+          margin-top: 40px;
+          margin-bottom: 40px;
+          margin-left: 15px;
+          margin-right: 40px; }
           @media (min-width: 768px) {
-            .iletisim-infos-inclusive-email-icon {
+            .iletisim-infos-inclusive-right-address {
               display: flex;
-              width: 40px;
-              height: 40px;
-              justify-content: center;
+              width: 100%;
+              height: 10%;
               align-items: center; } }
-        .iletisim-infos-inclusive-email i {
-          font-size: 26px;
-          color: #2f5369; }
-          @media (min-width: 768px) {
-            .iletisim-infos-inclusive-email i {
-              font-size: 32px;
-              color: #2f5369; } }
-      .iletisim-infos-inclusive-phone {
-        display: flex;
-        width: 100%;
-        height: 10%;
-        align-items: center; }
-        @media (min-width: 768px) {
-          .iletisim-infos-inclusive-phone {
+          .iletisim-infos-inclusive-right-address-icon {
             display: flex;
-            width: 100%;
-            height: 10%;
-            align-items: center; } }
-        .iletisim-infos-inclusive-phone-icon {
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center; }
+            @media (min-width: 768px) {
+              .iletisim-infos-inclusive-right-address-icon {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                justify-content: center;
+                align-items: center; } }
+          .iletisim-infos-inclusive-right-address i {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 34px;
+            color: #2f5369; }
+            @media (min-width: 768px) {
+              .iletisim-infos-inclusive-right-address i {
+                font-size: 40px;
+                color: #2f5369; } }
+        .iletisim-infos-inclusive-right-email {
           display: flex;
-          width: 40px;
-          height: 40px;
-          justify-content: center;
-          align-items: center; }
+          width: 100%;
+          height: 10%;
+          align-items: center;
+          margin-top: 40px;
+          margin-bottom: 40px;
+          margin-left: 15px; }
           @media (min-width: 768px) {
-            .iletisim-infos-inclusive-phone-icon {
+            .iletisim-infos-inclusive-right-email {
               display: flex;
-              width: 40px;
-              height: 40px;
-              justify-content: center;
+              width: 100%;
+              height: 10%;
               align-items: center; } }
-        .iletisim-infos-inclusive-phone i {
-          font-size: 34px;
-          color: #2f5369; }
+          .iletisim-infos-inclusive-right-email-icon {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center; }
+            @media (min-width: 768px) {
+              .iletisim-infos-inclusive-right-email-icon {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                justify-content: center;
+                align-items: center; } }
+          .iletisim-infos-inclusive-right-email i {
+            font-size: 26px;
+            color: #2f5369; }
+            @media (min-width: 768px) {
+              .iletisim-infos-inclusive-right-email i {
+                font-size: 32px;
+                color: #2f5369; } }
+        .iletisim-infos-inclusive-right-phone {
+          display: flex;
+          width: 100%;
+          height: 10%;
+          align-items: center;
+          margin-top: 40px;
+          margin-bottom: 40px;
+          margin-left: 15px; }
           @media (min-width: 768px) {
-            .iletisim-infos-inclusive-phone i {
-              font-size: 40px;
-              color: #2f5369; } }
+            .iletisim-infos-inclusive-right-phone {
+              display: flex;
+              width: 100%;
+              height: 10%;
+              align-items: center; } }
+          .iletisim-infos-inclusive-right-phone-icon {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center; }
+            @media (min-width: 768px) {
+              .iletisim-infos-inclusive-right-phone-icon {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                justify-content: center;
+                align-items: center; } }
+          .iletisim-infos-inclusive-right-phone i {
+            font-size: 34px;
+            color: #2f5369; }
+            @media (min-width: 768px) {
+              .iletisim-infos-inclusive-right-phone i {
+                font-size: 40px;
+                color: #2f5369; } }
     .iletisim-infos-maps {
       display: flex;
       width: 100%;
-      height: 40%; }
+      height: 40%;
+      margin-bottom: 40px; }
       @media (min-width: 768px) {
         .iletisim-infos-maps {
           display: flex;
           width: 100%;
-          height: 40%; } }
+          height: 45%;
+          margin-bottom: 40px; } }
   .iletisim-img {
     display: none;
     flex-direction: column;
@@ -2588,6 +2769,31 @@ https://flickity.metafizzy.co
         display: flex;
         width: 100%;
         height: 100%; }
+
+.kvkk {
+  display: flex;
+  width: 100%;
+  height: auto; }
+  .kvkk-text {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .kvkk-text p {
+      line-height: 20px;
+      text-align: justify; }
+    .kvkk-text #kvkk_middle {
+      text-align: center;
+      padding-bottom: 10px; }
+    .kvkk-text .kvkk_mb_full {
+      margin-bottom: 20px; }
+    .kvkk-text .kvkk_mb_half {
+      margin-bottom: 10px; }
+    .kvkk-text .kvkk_width {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
+    .kvkk-text .kvkk_mt {
+      margin-top: 20px; }
 
 
 /*# sourceMappingURL=/main.90c45431.css.map */

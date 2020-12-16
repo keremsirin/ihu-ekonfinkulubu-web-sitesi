@@ -278,3 +278,24 @@
         }
     }
 }
+
+#kvkk {
+    color: white;
+    transition: 0.3s;
+    text-decoration: underline;
+
+    &:hover {
+        color: $color-blue;
+    }
+}
+
+#kvkk_en {
+    color: white;
+    transition: 0.3s;
+    text-decoration: underline;
+    font-size: $font-size-small;
+
+    &:hover {
+        color: $color-blue;
+    }
+}

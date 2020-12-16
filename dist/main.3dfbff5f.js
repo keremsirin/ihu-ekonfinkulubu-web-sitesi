@@ -184,6 +184,36 @@ if ($(window).width() < 350) {
   $("#smm").text('Social Media M.');
   $(".hakkimizda-vm").css('height', '7270px');
 }
+
+$(document).ready(function () {
+  $(".submit").click(function (event) {
+    console.log("clicked");
+    var email = $('.email').val();
+    var subject = $('.subject').val();
+    var message = $('.message').val();
+
+    if (email.length > 5 && email.includes('@') && email.includes('.')) {
+      console.log('ok');
+    } else {
+      event.preventDefault();
+      alert('Lütfen geçerli bir email adresi giriniz!');
+    }
+
+    if (subject.length > 2) {
+      console.log('ok');
+    } else {
+      event.preventDefault();
+      alert('Lütfen daha uzun bir konu başlığı giriniz!');
+    }
+
+    if (message.length > 10) {
+      console.log('ok');
+    } else {
+      event.preventDefault();
+      alert('Lütfen daha uzun bir mesaj giriniz!');
+    }
+  });
+});
 },{}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -212,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54337" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50390" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
