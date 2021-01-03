@@ -2475,6 +2475,20 @@ https://flickity.metafizzy.co
             color: #2f5369;
             margin-top: auto; } }
 
+.button_youtube {
+  width: 180px;
+  height: 40px;
+  background-color: #2f5369;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  transition: 0.3s; }
+  .button_youtube:hover {
+    background-color: #FF0000; }
+  .button_youtube i {
+    color: white; }
+
 .iletisim {
   display: flex;
   width: 100%;
